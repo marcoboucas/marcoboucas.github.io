@@ -30,6 +30,9 @@
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
+    <!-- Tags and techs -->
+
+
 </head>
 
 <body>
@@ -84,13 +87,70 @@
                 <section class="latest section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Projects</h2>
-                        <div class="content">
+                        <div class="content" id="filter-box">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Techs</th>
+                                        <td>
+                                            <ul>
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">Python🐍</button>
+                                                </li>
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">Transformers🤗</button>
+                                                </li>
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">Scikit-Learn</button>
+                                                </li>
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">Keras</button>
+                                                </li>
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">Django</button>
+                                                </li>
 
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">Javascript</button></li>
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">Typescript</button>
+                                                </li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tags</th>
+                                        <td>
+                                            <ul>
+                                                <li class="filter-button"><button onclick="updateFilter(this)">Machine
+                                                        Learning</button>
+                                                </li>
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">NLP</button></li>
+                                                <li class="filter-button"><button onclick="updateFilter(this)">Data
+                                                        Science</button></li>
+                                                <li class="filter-button"><button
+                                                        onclick="updateFilter(this)">Web</button></li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr />
+                        <div class="content" id="portfolio-content">
+                            <!--
                             <div class="item featured text-center">
-                                <!--
+                                
                                 <div class="featured-image has-ribbon">
                                     <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/"
-                                        target="_blank">
+                                        >
                                         <img class="img-fluid project-image rounded shadow-sm"
                                             src="assets/images/projects/project-featured.jpg" alt="project name" />
                                     </a>
@@ -101,7 +161,7 @@
                                 
                                 <h3 class="title mb-3"><a
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/"
-                                        target="_blank">Launch - The perfect Bootstrap template for SaaS products</a>
+                                        >Launch - The perfect Bootstrap template for SaaS products</a>
                                 </h3>
 
                                 <div class="desc text-left">
@@ -114,274 +174,446 @@
         
                                 <a class="btn btn-cta-secondary"
                                     href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/"
-                                    target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>
+                                    ><i class="fas fa-thumbs-up"></i> Back my project</a>
                                     
                             </div>
             
                             <hr class="divider" />
                             -->
-                                <div class="item row">
-                                    <a class="col-md-4 col-12"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/bnppam.jpg"
-                                            alt="Recommender System for BNP Paribas - Asset Management" />
-                                    </a>
-                                    <div class="desc col-md-8 col-12">
-                                        <h3 class="title" id="dty-bnppam"><a
-                                                href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
-                                                target="_blank">Recommender System for BNP Paribas - Asset
-                                                Management</a>
-                                        </h3>
-                                        <p class="mb-2" style="font-style: italic;">BNP Paribas Asset Management is the
-                                            dedicated, autonomous asset
-                                            management business of BNP Paribas Group</p>
-                                        <p class="mb-2">We created a recommender system that finds the best blog
-                                            articles
-                                            and internal resources for a given product. Using
-                                            State-of-the-Art models such as DistilBERT, finBERT and Longformer we were
-                                            able
-                                            to summarize articles for the Sales,
-                                            making easier the task of finding relevant documents.</p>
-                                        <!--<p><a class="more-link"
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#dty-bnppam">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/bnppam.jpg"
+                                        alt="Recommender System for BNP Paribas - Asset Management" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title" id="dty-bnppam"><a href="#dty-bnppam">Recommender System for
+                                            BNP Paribas - Asset
+                                            Management</a>
+                                    </h3>
+                                    <p class="mb-2" style="font-style: italic;">BNP Paribas Asset Management is the
+                                        dedicated, autonomous asset
+                                        management business of BNP Paribas Group</p>
+                                    <p class="mb-2">We created a recommender system that finds the best blog
+                                        articles
+                                        and internal resources for a given product. Using
+                                        State-of-the-Art models such as DistilBERT, finBERT and Longformer we were
+                                        able
+                                        to summarize articles for the Sales,
+                                        making easier the task of finding relevant documents.</p>
+
+                                    <table class="tech-and-tags">
+                                        <tbody>
+                                            <tr>
+                                                <th>Techs</th>
+                                                <td>
+                                                    <ul class="techs">
+                                                        <li>Python🐍</li>
+                                                        <li>Transformers🤗</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tags</th>
+                                                <td>
+                                                    <ul class="tags">
+                                                        <li>NLP</li>
+                                                        <li>Machine Learning</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!--<p><a class="more-link"
                                             href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                            ><i class="fas fa-external-link-alt"></i>Find out more</a>
                                     </p>-->
-                                    </div>
-                                    <!--//desc-->
                                 </div>
-                                <!--//item-->
-
-                                <div class="item row">
-                                    <a class="col-md-4 col-12"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/runwaiz.jpg"
-                                            alt="Coefficient Computation for RunWaiz (Safran)" />
-                                    </a>
-                                    <div class="desc col-md-8 col-12">
-                                        <h3 class="title" id="dty-runwaiz"><a
-                                                href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
-                                                target="_blank">Coefficient Computation for RunWaiz (Safran)
-                                            </a></h3>
-                                        <p class="mb-2" style="font-style: italic;">RunWaiz is the winner of the "We
-                                            Love Intrapreneurs" program of
-                                            Safran, itintends to create an airport decision making
-                                            tool based on runwaiz conditions.</p>
-                                        <p class="mb-2">The purpose of this project was to
-                                            predict the state of the landing runway based on sensors outputs of planes.
-                                            We
-                                            tried
-                                            different methods and Machine Learning models to find the best one one
-                                            simulated
-                                            landings. Tests on the real flights
-                                            were also done, to test our model on "real" conditions.</p>
-                                        <!--<p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>-->
-                                    </div>
-                                    <!--//desc-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item row">
-                                    <a class="col-md-4 col-12"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/flashbrand.jpg"
-                                            alt="Emotions Recognition in Videos for Flashbrand" />
-                                    </a>
-                                    <div class="desc col-md-8 col-12">
-                                        <h3 class="title" id="dty-flashbrand"><a
-                                                href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
-                                                target="_blank">Emotions Recognition in Videos for Flashbrand</a></h3>
-                                        <p class="mb-2" style="font-style: italic;">Flashbrand is an innovative startup
-                                            that
-                                            aims to revolutionize
-                                            feedbacks and HRmethods using AI and an employee centred
-                                            approach.</p>
-                                        <p class="mb-2">We created an application to gather information from a video
-                                            conversation in real-time. Text, Image and Sound were
-                                            treated to gather as much information as possible. We included a small coach
-                                            bot, to provide useful information during
-                                            the presentation to improve the user performance.</p>
-                                        <!--<p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>-->
-                                    </div>
-                                    <!--//desc-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item row">
-                                    <a class="col-md-4 col-12"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/twitter.jpg" alt="Tweet Analysis, a CentraleSupélec project
-" />
-                                    </a>
-                                    <div class="desc col-md-8 col-12">
-                                        <h3 class="title"><a
-                                                href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
-                                                target="_blank">Tweet Analysis, a CentraleSupélec project
-                                            </a></h3>
-                                        <p class="mb-2" style="font-style: italic;">During my first year at
-                                            CentraleSupélec,
-                                            for the lesson about Information Retrieval</p>
-                                        <p class="mb-2">We created a system to evaluate "how famous a movie is", based
-                                            on
-                                            twitter. Using different vectorization techniques,
-                                            from TF-IDF to LSTM models, we were able to give a popularity measure based
-                                            on
-                                            all tweets about a movie. As a
-                                            demonstration, we used the movie "Godzilla", and the results were very
-                                            similar
-                                            to the "Rotten Tomatoes score" (our
-                                            reference).</p>
-                                        <!--<p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>-->
-                                    </div>
-                                    <!--//desc-->
-                                </div>
-                                <!--//item-->
-                                <div class="item row">
-                                    <a class="col-md-4 col-12"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/clustering.jpg"
-                                            alt="Clustering Pedagogical Platform, a CentraleSupélec project" />
-                                    </a>
-                                    <div class="desc col-md-8 col-12">
-                                        <h3 class="title"><a
-                                                href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                                target="_blank">Clustering Pedagogical Platform, a CentraleSupélec
-                                                project</a></h3>
-                                        <p class="mb-2" style="font-style: italic;">During my first year at
-                                            CentraleSupélec,
-                                            for the AI Project</p>
-                                        <p class="mb-2">We created a Pedagogical Platform for french students to learn
-                                            and
-                                            discover clustering methods and algorithms. Our
-                                            website explains 3 algorithms : K-Means, hierarchical clustering and DBSCAN,
-                                            with for each algorithm a small desciption,
-                                            a visualisation of the process, a notebook exercise and an small summary on
-                                            essential information.</p>
-                                        <!--<p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>-->
-                                    </div>
-                                    <!--//desc-->
-                                </div>
-                                <!--//item-->
-
-
-                                <div class="item row">
-                                    <a class="col-md-4 col-12"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/viarezo.jpg"
-                                            alt="Palaborne, a ViaRézo project" />
-                                    </a>
-                                    <div class="desc col-md-8 col-12">
-                                        <h3 class="title" id="viarezo-palaborne"><a
-                                                href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                                target="_blank">Palaborne, a ViaRézo project</a></h3>
-                                        <p class="mb-2" style="font-style: italic;">ViaRézo is a student association
-                                            that
-                                            provide internet to all students of the residences of CentraleSupélec (more
-                                            than
-                                            3000 students).</p>
-                                        <p class="mb-2">As an Internet Provider, ViaRézo has a lot of machines,
-                                            especially
-                                            wifi hotspots (about 300). To visualize all these
-                                            elements, I created MyRezIn3D, an application that display all elements of
-                                            the
-                                            infrastructure in 3D, to help detect
-                                            geographical problems.</p>
-                                        <!--
-                                    <p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>-->
-                                    </div>
-                                    <!--//desc-->
-                                </div>
-
-                                <div class="item row">
-                                    <a class="col-md-4 col-12"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/treasurehunt.jpg"
-                                            alt="MyRezIn3D, a ViaRézo project" />
-                                    </a>
-                                    <div class="desc col-md-8 col-12">
-                                        <h3 class="title" id="viarezo-treasurehunt"><a
-                                                href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                                target="_blank">TreasureHunt, a ViaRézo project</a></h3>
-                                        <p class="mb-2" style="font-style: italic;">ViaRézo is a student association
-                                            that
-                                            provide internet to all students of the residences of CentraleSupélec (more
-                                            than
-                                            3000 students).</p>
-                                        <p class="mb-2">Each year, ViaRézo is organising a Treasure Hunt on the campus
-                                            of CentraleSupélec, allowing new students to discover the buildings and some
-                                            key locations. I have developped a Treasure Hunt website, handling all the
-                                            teams (about 250 students) to help them found their next activity, making
-                                            easier the staff work during the event.</p>
-                                        <!--
-                                                                    <p><a class="more-link"
-                                                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                                                    </p>-->
-                                    </div>
-                                    <!--//desc-->
-                                </div>
-
-                                <div class="item row">
-                                    <a class="col-md-4 col-12"
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                        target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/automatants.jpg"
-                                            alt="Automatants Website, an Automatants project" />
-                                    </a>
-                                    <div class="desc col-md-8 col-12">
-                                        <h3 class="title" id="automatants-website"><a
-                                                href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                                target="_blank">Automatants Website, an Automatants project</a></h3>
-                                        <p class="mb-2" style="font-style: italic;">Automatants is the new AI
-                                            association of
-                                            CentraleSupélec.</p>
-                                        <p class="mb-2">To increase the visibility of our association, I created a
-                                            website
-                                            for our association. We also have some new features,
-                                            such as a member access, with all information about the current projects and
-                                            formations, alongside a system of
-                                            formations and rewards, to make easier the development of new skills.</p>
-                                        <!--<p><a class="more-link"
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>-->
-                                    </div>
-                                    <!--//desc-->
-                                </div>
-
+                                <!--//desc-->
                             </div>
-                            <!--//content-->
+                            <!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#dty-runwaiz">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/runwaiz.jpg"
+                                        alt="Coefficient Computation for RunWaiz (Safran)" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title" id="dty-runwaiz"><a href="#dty-runwaiz">Coefficient
+                                            Computation for RunWaiz (Safran)
+                                        </a></h3>
+                                    <p class="mb-2" style="font-style: italic;">RunWaiz is the winner of the "We
+                                        Love Intrapreneurs" program of
+                                        Safran, itintends to create an airport decision making
+                                        tool based on runwaiz conditions.</p>
+                                    <p class="mb-2">The purpose of this project was to
+                                        predict the state of the landing runway based on sensors outputs of planes.
+                                        We
+                                        tried
+                                        different methods and Machine Learning models to find the best one one
+                                        simulated
+                                        landings. Tests on the real flights
+                                        were also done, to test our model on "real" conditions.</p>
+                                    <table class="tech-and-tags">
+                                        <tbody>
+                                            <tr>
+                                                <th>Techs</th>
+                                                <td>
+                                                    <ul class="techs">
+                                                        <li>Python🐍</li>
+                                                        <li>Scikit-Learn</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tags</th>
+                                                <td>
+                                                    <ul class="tags">
+                                                        <li>Machine Learning</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!--<p><a class="more-link"
+                                            href="#"
+                                            ><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    </p>-->
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#dty-flashbrand">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/flashbrand.jpg"
+                                        alt="Emotions Recognition in Videos for Flashbrand" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title" id="dty-flashbrand"><a href="#dty-flashbrand">Emotions
+                                            Recognition in Videos for Flashbrand</a></h3>
+                                    <p class="mb-2" style="font-style: italic;">Flashbrand is an innovative startup
+                                        that
+                                        aims to revolutionize
+                                        feedbacks and HRmethods using AI and an employee centred
+                                        approach.</p>
+                                    <p class="mb-2">We created an application to gather information from a video
+                                        conversation in real-time. Text, Image and Sound were
+                                        treated to gather as much information as possible. We included a small coach
+                                        bot, to provide useful information during
+                                        the presentation to improve the user performance.</p>
+                                    <table class="tech-and-tags">
+                                        <tbody>
+                                            <tr>
+                                                <th>Techs</th>
+                                                <td>
+                                                    <ul class="techs">
+                                                        <li>Javascript</li>
+                                                        <li>Typescript</li>
+                                                        <li>NodeJs</li>
+                                                        <li>VueJs</li>
+                                                        <li>Python🐍</li>
+                                                        <li>Transformers🤗</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tags</th>
+                                                <td>
+                                                    <ul class="tags">
+                                                        <li>Web</li>
+                                                        <li>AI</li>
+                                                        <li>NLP</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!--<p><a class="more-link"
+                                            href="#"
+                                            ><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    </p>-->
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#cs-tweets">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/twitter.jpg" alt="Tweet Analysis, a CentraleSupélec project
+" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title" id="cs-tweets"><a href="#cs-tweets">Tweet Analysis, a
+                                            CentraleSupélec
+                                            project
+                                        </a></h3>
+                                    <p class="mb-2" style="font-style: italic;">During my first year at
+                                        CentraleSupélec,
+                                        for the lesson about Information Retrieval</p>
+                                    <p class="mb-2">We created a system to evaluate "how famous a movie is", based
+                                        on
+                                        twitter. Using different vectorization techniques,
+                                        from TF-IDF to LSTM models, we were able to give a popularity measure based
+                                        on
+                                        all tweets about a movie. As a
+                                        demonstration, we used the movie "Godzilla", and the results were very
+                                        similar
+                                        to the "Rotten Tomatoes score" (our
+                                        reference).</p>
+                                    <table class="tech-and-tags">
+                                        <tbody>
+                                            <tr>
+                                                <th>Techs</th>
+                                                <td>
+                                                    <ul class="techs">
+                                                        <li>Python🐍</li>
+                                                        <li>Keras</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tags</th>
+                                                <td>
+                                                    <ul class="tags">
+                                                        <li>NLP</li>
+                                                        <li>Machine Learning</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!--<p><a class="more-link"
+                                            href="#"
+                                            ><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    </p>-->
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#cs-clustering">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/clustering.jpg"
+                                        alt="Clustering Pedagogical Platform, a CentraleSupélec project" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title" id="cs-clustering"><a href="#cs-clustering">Clustering Pedagogical
+                                            Platform, a
+                                            CentraleSupélec
+                                            project</a></h3>
+                                    <p class="mb-2" style="font-style: italic;">During my first year at
+                                        CentraleSupélec,
+                                        for the AI Project</p>
+                                    <p class="mb-2">We created a Pedagogical Platform for french students to learn
+                                        and
+                                        discover clustering methods and algorithms. Our
+                                        website explains 3 algorithms : K-Means, hierarchical clustering and DBSCAN,
+                                        with for each algorithm a small desciption,
+                                        a visualisation of the process, a notebook exercise and an small summary on
+                                        essential information.</p>
+                                    <table class="tech-and-tags">
+                                        <tbody>
+                                            <tr>
+                                                <th>Techs</th>
+                                                <td>
+                                                    <ul class="techs">
+                                                        <li>Javascript</li>
+                                                        <li>Python🐍</li>
+                                                        <li>Jupyter</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tags</th>
+                                                <td>
+                                                    <ul class="tags">
+                                                        <li>Machine Learning</li>
+
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!--<p><a class="more-link"
+                                            href="#"
+                                            ><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    </p>-->
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
+
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#viarezo-palaborne">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/viarezo.jpg" alt="Palaborne, a ViaRézo project" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title" id="viarezo-palaborne"><a href="#viarezo-palaborne">Palaborne, a
+                                            ViaRézo project</a></h3>
+                                    <p class="mb-2" style="font-style: italic;">ViaRézo is a student association
+                                        that
+                                        provide internet to all students of the residences of CentraleSupélec (more
+                                        than
+                                        3000 students).</p>
+                                    <p class="mb-2">As an Internet Provider, ViaRézo has a lot of machines,
+                                        especially
+                                        wifi hotspots (about 300). To visualize all these
+                                        elements, I created MyRezIn3D, an application that display all elements of
+                                        the
+                                        infrastructure in 3D, to help detect
+                                        geographical problems.</p>
+                                    <table class="tech-and-tags">
+                                        <tbody>
+                                            <tr>
+                                                <th>Techs</th>
+                                                <td>
+                                                    <ul class="techs">
+                                                        <li>Javascript</li>
+                                                        <li>p5.js</li>
+                                                        <li>Python🐍</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tags</th>
+                                                <td>
+                                                    <ul class="tags">
+                                                        <li>Web</li>
+                                                        <li>Data Science</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!--
+                                    <p><a class="more-link"
+                                            href="#"
+                                            ><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    </p>-->
+                                </div>
+                                <!--//desc-->
+                            </div>
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#viarezo-treasurehunt">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/treasurehunt.jpg"
+                                        alt="MyRezIn3D, a ViaRézo project" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title" id="viarezo-treasurehunt"><a
+                                            href="#viarezo-treasurehunt">TreasureHunt, a ViaRézo
+                                            project</a></h3>
+                                    <p class="mb-2" style="font-style: italic;">ViaRézo is a student association
+                                        that
+                                        provide internet to all students of the residences of CentraleSupélec (more
+                                        than
+                                        3000 students).</p>
+                                    <p class="mb-2">Each year, ViaRézo is organising a Treasure Hunt on the campus
+                                        of CentraleSupélec, allowing new students to discover the buildings and some
+                                        key locations. I have developped a Treasure Hunt website, handling all the
+                                        teams (about 250 students) to help them found their next activity, making
+                                        easier the staff work during the event.</p>
+                                    <table class="tech-and-tags">
+                                        <tbody>
+                                            <tr>
+                                                <th>Techs</th>
+                                                <td>
+                                                    <ul class="techs">
+                                                        <li>Python🐍</li>
+                                                        <li>Django</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tags</th>
+                                                <td>
+                                                    <ul class="tags">
+                                                        <li>Web</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--
+                                        <p><a class="more-link"
+                                                href="#"
+                                                ><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                        </p>-->
+                                </div>
+                                <!--//desc-->
+                            </div>
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#automatants-website">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/automatants.jpg"
+                                        alt="Automatants Website, an Automatants project" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title" id="automatants-website"><a
+                                            href="#automatants-website">Automatants
+                                            Website, an Automatants project</a></h3>
+                                    <p class="mb-2" style="font-style: italic;">Automatants is the new AI
+                                        association of
+                                        CentraleSupélec.</p>
+                                    <p class="mb-2">To increase the visibility of our association, I created a
+                                        website
+                                        for our association. We also have some new features,
+                                        such as a member access, with all information about the current projects and
+                                        formations, alongside a system of
+                                        formations and rewards, to make easier the development of new skills.</p>
+                                    <!--<p><a class="more-link"
+                                            href="#"
+                                            ><i class="fas fa-external-link-alt"></i>Find out more</a>
+                                    </p>-->
+                                    <table class="tech-and-tags">
+                                        <tbody>
+                                            <tr>
+                                                <th>Techs</th>
+                                                <td>
+                                                    <ul class="techs">
+                                                        <li>Javascript</li>
+                                                        <li>NodeJs</li>
+                                                        <li>Sequelize</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tags</th>
+                                                <td>
+                                                    <ul class="tags">
+                                                        <li>Web</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+
+
+                                </div>
+                                <!--//desc-->
+                            </div>
+
                         </div>
-                        <!--//section-inner-->
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
                 </section>
                 <!--
 
@@ -392,40 +624,40 @@
                             <div class="item">
                                 <h3 class="title"><a
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/"
-                                        target="_blank">Pillar - Free Boootstrap Resume/CV Template for Developers</a>
+                                        >Pillar - Free Boootstrap Resume/CV Template for Developers</a>
                                     <span class="badge badge-theme">Free</span></h3>
                                 <p class="summary">Provide a brief description of your project. Ut enim ad minima
                                     veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
                                     aliquid ex ea commodi consequatu.</p>
                                 <p><a class="more-link"
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/"
-                                        target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                                        ><i class="fas fa-external-link-alt"></i>Download Now</a></p>
                             </div>
                             //item
                             <div class="item">
                                 <h3 class="title"><a
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/"
-                                        target="_blank">DevBlog - Free Boootstrap Blog Template for Developers</a> <span
+                                        >DevBlog - Free Boootstrap Blog Template for Developers</a> <span
                                         class="badge badge-theme">Free</span></h3>
                                 <p class="summary">Provide a brief description of your project. Maecenas ornare
                                     ultricies risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis,
                                     sollicitudin velit in, molestie nulla. </p>
                                 <p><a class="more-link"
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/"
-                                        target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                                        ><i class="fas fa-external-link-alt"></i>Download Now</a></p>
                             </div>
                             //item
                             <div class="item">
                                 <h3 class="title"><a
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/"
-                                        target="_blank">Nova - Free App Landing Page Template for App Developers</a>
+                                        >Nova - Free App Landing Page Template for App Developers</a>
                                     <span class="badge badge-theme">Free</span></h3>
                                 <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit
                                     amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum
                                     ac ultrices sed.</p>
                                 <p><a class="more-link"
                                         href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/"
-                                        target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                                        ><i class="fas fa-external-link-alt"></i>Download Now</a></p>
                             </div>
 
                             <a class="btn btn-cta-secondary" href="#">More on GitHub <i
@@ -443,7 +675,7 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
                         <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a
-                                href="https://github.com/marcoboucas/github-calendar" target="_blank">GitHub
+                                href="https://github.com/marcoboucas/github-calendar" >GitHub
                                 Calendar</a> widget.
 
                         <div id="github-graph" class="github-graph">
@@ -452,7 +684,7 @@
                        
 
                         <p>You can also embed your GitHub activities using Casey Scarborough's <a
-                                href="https://github.com/marcoboucas/github-activity" target="_blank">GitHub
+                                href="https://github.com/marcoboucas/github-activity" >GitHub
                                 Activity Stream</a> widget.
                         //Usage: https://caseyscarborough.com/projects/github-activity/
                         <div id="ghfeed" class="ghfeed">
@@ -479,7 +711,7 @@
                                 <div class="item">
                                     <h3 class="level-title">Languages</h3>
                                     <ul>
-                                        <li>Python</li>
+                                        <li>Python🐍</li>
                                         <li>Javascript / Typescript</li>
                                         <li>HTML / CSS</li>
                                     </ul>
@@ -581,7 +813,7 @@
         <div class="container text-center">
             <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
             <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
-                    href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+                    href="https://themes.3rdwavemedia.com">Xiaoying Riley</a> for developers</small>
         </div>
         <!--//container-->
     </footer>
@@ -599,6 +831,8 @@
     <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>

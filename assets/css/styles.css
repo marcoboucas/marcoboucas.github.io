@@ -14,6 +14,67 @@
 .button-container {
   text-align: center;
 }
+
+.techs,
+.tags {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.techs li,
+.tags li {
+  border: solid 1px transparent;
+  background-color: #1e7e341a;
+  padding: 3px !important;
+  border-radius: 3px;
+  transition: all ease 0.3s;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.techs li:hover,
+.tags li:hover {
+  background-color: #1e7e3440;
+}
+.techs li,
+.tags li,
+.filter-button {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  display: inline;
+}
+.filter-button button {
+  background-color: #fffffffa;
+  border-color: black;
+  border-width: 2px;
+  border-style: double;
+  color: black;
+  border-radius: 3px;
+  transition: all ease 0.3s;
+}
+
+.filter-button button:hover {
+  color: white;
+  background-color: #479fc8;
+  border-color: #517ab8;
+}
+
+.filter-active {
+  background-color: #28a74575 !important;
+}
+.filter-active:hover {
+  color: black !important;
+  background-color: #28a746cb !important;
+}
+
+#filter-box ul {
+  padding: 0px;
+  padding-left: 10px;
+  margin: 3px;
+}
+
 /* Template */
 
 body {
