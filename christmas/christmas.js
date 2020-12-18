@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Only do the following if this is christmas
     let today = new Date();
-    if ([0, 1, 11].includes(today.getMonth())) {
+    if ([11].includes(today.getMonth())) {
         var script = document.createElement('script');
         script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
         script.onload = function () {
