@@ -8,7 +8,7 @@
 */
 
 .flag, .profile-image{
-  transition: 0.8s;
+  transition: 0.8s transform;
 } 
 .flag:hover, .profile-image:hover{
   transform: rotate(360deg);
