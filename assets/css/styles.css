@@ -7,6 +7,20 @@
  * Website: https://themes.3rdwavemedia.com/
 */
 
+.flag, .profile-image{
+  transition: 0.8s;
+} 
+.flag:hover, .profile-image:hover{
+  transform: rotate(360deg);
+}
+
+.social li a{
+  transition: 0.8s;
+}
+.social li a:hover{
+  transform: rotate(360deg);
+}
+
 .flag {
   width: 20px;
   margin-right: 10px;
@@ -27,7 +41,10 @@
 .tags li {
   border: solid 1px transparent;
   background-color: #1e7e341a;
-  padding: 3px !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
   border-radius: 3px;
   transition: all ease 0.3s;
   cursor: default;
@@ -53,6 +70,7 @@
   border-style: double;
   color: black;
   border-radius: 3px;
+  margin-bottom:1px;
   transition: all ease 0.3s;
 }
 

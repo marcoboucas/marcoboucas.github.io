@@ -67,11 +67,11 @@ function filter_projects() {
     test_filter = false;
     if (
       techs_filt.length == 0 ||
-      techs.filter((x) => techs_filt.includes(x)).length != 0
+      techs.filter((x) => techs_filt.includes(x)).length == techs_filt.length
     ) {
       if (
         tags_filt.length == 0 ||
-        tags.filter((x) => tags_filt.includes(x)).length != 0
+        tags.filter((x) => tags_filt.includes(x)).length == tags_filt.length
       ) {
         test_filter = true;
       }
