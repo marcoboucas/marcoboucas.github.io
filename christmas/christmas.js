@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // Only do the following if this is christmas
     let today = new Date();
     if ([11].includes(today.getMonth())) {
+        // Add the style
+        var head = document.getElementsByTagName('HEAD')[0];
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'christmas/christmas.css';
+        head.appendChild(link);
+
+        // Add the script and the snowflakes
         var script = document.createElement('script');
         script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
         script.onload = function () {
