@@ -7,6 +7,20 @@
  * Website: https://themes.3rdwavemedia.com/
 */
 
+.company_logo{
+  width:50px;
+  margin: 2px;
+  transition: all ease-in 0.5s;
+}
+.company_logo:hover, .company_logo_small:hover{
+  transform: scale(1.33);
+}
+.company_logo_small{
+  width:35px;
+  transition: all ease-in 0.5s;
+  margin: 2px;
+}
+
 .flag, .profile-image{
   transition: 0.8s transform;
 } 
