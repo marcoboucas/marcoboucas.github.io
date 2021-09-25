@@ -6,29 +6,64 @@
   "certifications": [
     {
       "id": "coursera-nlp",
-      "miniature": "",
+      "miniature": "deeplearningai.jfif",
       "name": "Natural Language Processing",
-      "organisation": "Coursera, DeepLearning.AI"
+      "organisation": "Coursera, DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/JL5VPNFSFWJR?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
     }
   ],
   "portfolio": [
     {
+      "company": {
+        "description": "BivwAk! is BNP Paribas' transformation hub, that aims at developing new services and new business models, accelerating the BNP Paribas engagement strategy",
+        "name": "BivwAk! (BNP Paribas)",
+        "url": "https://bivwak.bnpparibas"
+      },
       "id": "bnpparibas-tess",
       "links": [
         {
-          "text": "Know More",
+          "text": "LinkedIn post",
           "url": "https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-activity-6815909823708753921-uDIX"
         }
       ],
-      "miniature": "bnppam.jpg",
+      "miniature": "tess.jpg",
       "name": "TESS : Tool of Ethics, Security and Sustainability",
-      "short_description": "Short description here",
-      "tags": ["AI", "NLP"]
+      "short_description": "Development of TESS (Tool of Ethic, Sustainability & Security). Use of web scraping and NLP to automatically analyze the legal and security information from service providers based on public data.",
+      "tags": [
+        "AI",
+        "NLP",
+        "Scikit-Learn",
+        "Pandas",
+        "Selenium",
+        "Flask",
+        "React",
+        "Typescript"
+      ]
     },
     {
+      "company": {
+        "description": "73 Strings has been set up to fuse the best in technology with a deep understanding of critical insights to make capital more efficient.",
+        "name": "73 Strings",
+        "url": "https://www.73strings.com/"
+      },
       "id": "73strings-ect",
-      "miniature": "automatants.jpg",
-      "name": "Earning Calls Transcripts Analysis"
+      "miniature": "73strings-ect.jpg",
+      "name": "Earning Calls Transcripts Analysis",
+      "short_description": "Development of NLP algorithms and models for financial texts. Use of Topic Modeling, Sentiment Analysis, Classification algorithms, Abstractive Summarization Models to retrive information from long texts.",
+      "tags": [
+        "AI",
+        "Machine Learning",
+        "Transformers",
+        "GPT2",
+        "GPT3",
+        "Bert",
+        "T5",
+        "PEGASUS",
+        "PyTorch",
+        "Scikit-Learn",
+        "Pandas",
+        "DataViz"
+      ]
     },
     {
       "company": {
@@ -43,7 +78,7 @@
           "url": "https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-ethics-sustainable-activity-6739085784495792128-x4eW"
         }
       ],
-      "miniature": "bnppam.jpg",
+      "miniature": "tess.jpg",
       "name": "BNP Paribas DataChallenge",
       "short_description": "I have participated to the first Data Responsible Challenge from BNP Paribas CIB. Using NLP technologies, with State-of-the-Art NLP models like T5, to make an eco-friendly prototype. By computing the carbon footprint of our models, we can select the best one based not only on his accuracy, but also its impact on the environment.",
       "tags": [

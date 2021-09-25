@@ -107,4 +107,29 @@ header .header-buttons{
     margin-top: 8px;
 }
 
-/* SCROLL BAR*/
+/* CERTIFICATIONS */
+
+img.certification-image{
+    width: 50px;
+    margin-right: 16px;
+}
+.certification-text{
+    text-decoration: none;
+    color:  #606c71;
+}
+.certification-text:hover{
+    color: black;
+}
+.certification{
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 6px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.certification:hover{
+    border: solid 1px rgba(0, 0, 0, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+}

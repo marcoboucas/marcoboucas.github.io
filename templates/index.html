@@ -62,6 +62,10 @@
                                     Github
                                 </button>
                             </a>
+                            <a href="#certifications" ><button>
+                                Certifications
+                            </button>
+                        </a>
                         </a>
                     </div>
                 </div>
@@ -112,17 +116,20 @@
             </div>
         </div>
 
-        <!---
+        
         <hr />
-        <h3>Certifications</h3>
-        <ul>
+        <h3 id="certifications">Certifications</h3>
+        <ul style="list-style-type: none;">
            {% for certification in data['certifications'] %}
-            <li>
-                {{certification['name']}}
+           <a href="{{certification['url']}}"  target="_blank" rel="noreferrer noopener"class="certification-text">
+            <li class="certification">
+                <img src="/assets/images/certifications/{{certification['miniature']}}" alt="{{certification['name']}}" class="certification-image"/>{{certification['name']}}
+               
             </li>
+        </a>
            {% endfor %}
         </ul>
-        -->
+        
         <div style="margin-bottom: 64px;"></div>
 
     </section>
