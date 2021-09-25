@@ -1,0 +1,110 @@
+/* GENERAL STYLING */
+
+html,body{
+    color: #606c71;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: "Raleway";
+    color: white;
+}
+h2{
+    font-size:large;
+    color: rgba(255,255,255,0.7)
+}
+h3{
+    font-family: "Raleway";
+    text-transform: uppercase;
+}
+
+/* BUTTONS & LINKS */
+button{
+    margin: 8px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    
+}
+button:hover{
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.3)
+}
+
+button.dark{
+    color: rgba(0,0,0,0.7);
+    background-color: white;
+    border-color: black;
+    transition: box-shadow 0.7s ease;
+}
+button.dark:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+}
+
+
+/* HEADER */
+header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    padding-top:42px;
+    padding-bottom:32px;
+}
+header .header-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.header-buttons button{text-transform: uppercase;
+}
+#imageMe {
+    border-radius: 50%;
+    transition: transform 1s ease;
+    height: 100%;
+    max-width: 250px;
+    margin: auto;
+}
+
+#imageMe:hover {
+    transform: rotate(360deg);
+}
+
+
+
+/* ABOUT ME */
+.about-me{
+    margin-top: 16px;
+}
+
+.project-card{
+    border: solid 1px #00000042;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.project-card-always{
+    display: flex;
+    
+}
+.project-miniature{
+    max-height: 200px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.project-text{
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+/* SCROLL BAR*/

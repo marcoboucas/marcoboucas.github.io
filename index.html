@@ -7,31 +7,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marco Boucas, Machine Learning Engineer">
+    <meta name="description" content="Marco Boucas, Data Scientist">
     <meta name="author" content="Marco Boucas">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/site.webmanifest">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
-        type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
 
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/style.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <sc ript async src="https://www.googletagmanager.com/gtag/js?id=G-428XGJ6L0G">
@@ -46,432 +42,273 @@
 </head>
 
 <body>
-    <div id="snow"></div>
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container clearfix">
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/personal-mini.jpg"
-                alt="profile image" />
-            <div class="profile-content float-left">
-                <h1 class="name">Marco Boucas</h1>
-                <h2 class="desc">Machine Learning Engineer</h2>
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="mailto:marco.boucas@hotmail.fr" target="_blank"><i
-                                class="far fa-envelope"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/Palad0rn" target="_blank"><i
-                                class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/boucasmarco/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a></li>
-                    <!--
-                                                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
-                                                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
-                                                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>
-                                                    -->
-                </ul>
-            </div>
-            <!--//profile-->
 
-
-        </div>
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-md-3 col-lg-2 button-container">
-                    <a class="btn btn-cta-primary float-right" href="#">About Me</a>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8" style="margin:auto;">
+                    <h1>Marco Boucas</h1>
+                    <h2>Data Scientist student at CentraleSupélec</h2>
+                    <div class="header-buttons">
+                        <a href="/resume.pdf" target="_blank" rel="noreferrer noopener"><button>
+                                resume
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/boucasmarco/" target="_blank"
+                            rel="noreferrer noopener"><button>
+                                Linkedin
+                            </button>
+                            <a href="https://github.com/marcoboucas" target="_blank" rel="noreferrer noopener"><button>
+                                    Github
+                                </button>
+                            </a>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-3 col-lg-2 button-container">
-                    <a class="btn btn-cta-primary float-right" href="resume.pdf" target="_blank"
-                        style="overflow: hidden; white-space: nowrap;">My Resume</a>
-                </div>
-                <div class="col-md-3 col-lg-2 button-container">
-                    <a class="btn btn-cta-primary float-right" href="portfolio.html">Portfolio</a>
-                </div>
+                <img src="assets/images/personal.jpg" id="imageMe" class="col-sm-4" />
             </div>
         </div>
-        <!--//container-->
     </header>
-    <!--//header-->
 
-    <div class="container sections-wrapper">
+    <section class="container about-me">
+        <h3>About me</h3>
         <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>
-                                I am a dynamic and enthusiastic Master year student at @CentraleSupélec, one of France
-                                top Engineering Schools. Since I
-                                am 10-year old, I learned how to create websites for fun! And nowadays, I am now
-                                focusing on Artificial Intelligence,
-                                passionate by this new domain of computer science, especially when applied to text
-                                analysis.</br></br>
-
-                                Selected among the most talented tech-focused students, I joined the @ParisDigitalLab, a
-                                program of excellence designed
-                                to meet organisations' digital needs. Thanks to its "learning by doing" pedagogy, I
-                                intend to develop a better
-                                understanding of new technologies and the issues they raise and tackle.</br></br>
-                            </p>
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">
-                                    <a href="https://www.73strings.com/" target="_blank"><img
-                                            src="/assets/images/companies/73strings.png" class="company_logo"
-                                            alt="73 Strings Logo" /></a>
-                                    Machine Learning Intern - <span class="place"><a href="https://www.73strings.com/"
-                                            target="_blank">
-                                            73 Strings</a></span> <span class="year">(Sept 2020 - Present)</span>
-                                </h3>
-                                <p style="font-style: italic;">73 Strings has been set up to fuse the best in technology
-                                    with a deep understanding of critical
-                                    insights to make capital
-                                    more efficient.</p>
-                                <p>Extraction of information from Earnings Call from listed companies, using
-                                    methods like entity detection, sentiment analysis, classification, topic modeling
-                                    and abstractive summarization to generate a relevant analysis.</p>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://paris-digital-lab.com/" target="_blank"><img
-                                            src="/assets/images/companies/parisDititalLab.png" class="company_logo"
-                                            alt="Paris Digital Lab Logo" /></a>
-                                    Data Scientist - <span class="place"><a href="https://paris-digital-lab.com/"
-                                            target="_blank">Paris Digital
-                                            Lab</a></span>
-                                    <span class="year">(Feb 2020 - Jul 2020)</span>
-                                </h3>
-                                <p style="font-style: italic;">
-                                    ParisDigitalLab is an open innovation training device to enable students to become
-                                    proficient in various technologies
-                                    through the realization of real-world projects, using scrum methodology.
-                                </p>
-                                <p>As a CentraleSupélec student, I have been selected to be part of the Digital Tech
-                                    Year. This programm allow us to be part of 3 tech projects, focusing on AI and Dev
-                                    to meet the needs of companies.<br />
-                                <ul>
-                                    <li><a href="https://flashbrand.me/" target="_blank"><img
-                                                src="/assets/images/companies/flashbrand.png" class="company_logo_small"
-                                                alt="Flashbrand Logo" /></a>
-                                        <a href="portfolio.html#dty-flashbrand"></a>
-                                        Emotions Recognition in Videos for
-                                        Flashbrand</a>
-                                    </li>
-                                    <li><a href="https://www.runwaiz.com/" target="_blank"><img
-                                                src="/assets/images/companies/runwaiz.png" class="company_logo_small"
-                                                alt="RunWaiz Logo" /></a><a
-                                            href="portfolio.html#dty-runwaiz"></a>Coefficient Computation for RunWaiz
-                                        (Safran)</a></li>
-                                    <li><a href="https://www.bnpparibas-am.fr/" target="_blank"><img
-                                                src="/assets/images/companies/bnppam.png" class="company_logo_small"
-                                                alt="BNP Paribas Logo" /></a>Recommender
-                                        System for <a href="portfolio.html#dty-bnppam">BNP Paribas - Asset
-                                            Management</a></li>
-                                </ul>
-                                </p>
-                            </div>
-                            <!--//item-->
-
-                            <div class=" item">
-                                <h3 class="title"><a href="https://viarezo.fr/" target="_blank"><img
-                                            src="/assets/images/companies/viarezo.png" class="company_logo"
-                                            alt="Viarezo Logo" /></a>Web Developer & Data Scientist - <span
-                                        class="place"><a href="https://viarezo.fr/" target="_blank">ViaRézo</a></span>
-                                    <span class="year">(2019 - 2020)</span>
-                                </h3>
-                                <p style="font-style: italic;">ViaRézo is an association of students dedicated to the
-                                    management of the internet network on the student residence
-                                    (2,000 members).</p>
-                                <p>Website creations for events and services in order to enhance the student experience
-                                    at CentraleSupélec. Organisation of events for students.
-                                <ul>
-                                    <li><a href="portfolio.html#viarezo-palaborne">Palaborne</a></li>
-                                    <li><a href="portfolio.html#viarezo-treasurehunt">TreasureHunt</a></li>
-                                </ul>
-                                </p>
-                            </div>
-                            <!--//item-->
-
-                            <div class=" item">
-                                <h3 class="title"><a href="https://automatants.cs-campus.fr" target="_blank"><img
-                                            src="/assets/images/companies/automatants.png" class="company_logo"
-                                            alt="Automatants Logo" /></a>Web Developer - <span class="place"><a
-                                            href="https://automatants.cs-campus.fr"
-                                            target="_blank">Automatants</a></span>
-                                    <span class="year">(2019 - 2020)</span>
-                                </h3>
-                                <p style="font-style: italic;">Automatants is an association of students promoting
-                                    Artificial Intelligence on the Paris Saclay campus.</p>
-                                <p>Developing the WebSite of the Association from zero. Administration, maintenance work
-                                    and features creation to provide
-                                    users an access to informations, projects and formations.<br />
-                                <ul>
-                                    <li><a href="portfolio.html#automatants">Automatants Website</a></li>
-                                </ul>
-                                </p>
-                            </div>
-
-
-                            <div class=" item">
-                                <h3 class="title"><a href="https://www.kersia-group.com/fr/" target="_blank"><img
-                                            src="/assets/images/companies/kersia.png" class="company_logo"
-                                            alt="Kersia Logo" /></a>IT Trainee - <span class="place"><a
-                                            href="https://www.kersia-group.com/fr/" target="_blank">Kersia</a></span>
-                                    <span class="year">(Jul 2019)</span>
-                                </h3>
-                                <p style="font-style: italic;">Kersia is a global leader in biosecurity and food safety
-                                    with value added products and solutions to prevent diseases or
-                                    contamination in both animals and humans at every stage of the food supply chain.
-                                </p>
-                                <p>I was able to discover how IT teams are organised in companies and have been able to
-                                    handle simple tasks such as installing computers, change the configurations of
-                                    switches, ...</p>
-                            </div>
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <section class="education section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><img src="/assets/images/companies/centralesupelec.png"
-                                        class="company_logo" alt="CentraleSupélec Logo" />Master of Science in
-                                    Engineering
-                                </h3>
-                                <h4 class="university">CentraleSupélec <span class="year">(Sept 2018 - Present)</span>
-                                </h4>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><img src="/assets/images/companies/saintLouis.png"
-                                        class="company_logo" alt="Saint Louis Logo" />Intensive Preparatory Courses
-                                </h3>
-                                <h4 class="university">Lycée Saint-Louis <span class="year">(2016-2017)</span></h4>
-                            </div>
-                            <!--//item-->
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-
+            <div class="col-md-6" style="align-items: center;">
+                <p>I am a dynamic and enthusiastic Master year student at @CentraleSupélec, one of France top Engineering Schools. Since I am 10-year old, I learned how to create websites for fun! And nowadays, <strong>I am now focusing on Artificial Intelligence, passionate by this new domain of computer science, especially when applied to text analysis.</strong></p>
+            </div>
+            <div class="col-md-6" style="align-items: center;">
+                <p>Selected among the most talented tech-focused students, I joined the @ParisDigitalLab, a program of excellence designed to meet organisations' digital needs. Thanks to its "learning by doing" pedagogy, I intend to develop a better understanding of new technologies and the issues they raise and tackle.</p>
 
             </div>
-            <!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Paris,
-                                    France</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                                        href="mailto:marco.boucas@hotmail.fr">marco.boucas@hotmail.fr</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a
-                                        href="https://marco.boucas.fr">https://marco.boucas.fr</a></li>
-                            </ul>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//aside-->
+        </div>
+        <hr />
+        <h3>Portfolio</h3>
 
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            <p class="intro"></p>
 
-                            <div class="skillset">
-                                <div class="item">
-                                    <h3 class="level-title">Languages</h3>
-                                    <ul>
-                                        <li>Python</li>
-                                        <li>Javascript / Typescript</li>
-                                        <li>HTML / CSS</li>
-                                    </ul>
-                                </div>
-
-                                <div class="item">
-                                    <h3 class="level-title">Data Science</h3>
-                                    <ul>
-                                        <li>Numpy</li>
-                                        <li>Pandas</li>
-                                        <li>Scikit-Learn</li>
-                                        <li>Keras</li>
-                                        <li>PyTorch</li>
-                                        <li>NLTK</li>
-
-                                    </ul>
-                                </div>
-
-                                <div class="item">
-                                    <h3 class="level-title">Web</h3>
-                                    <ul>
-                                        <li>NodeJs</li>
-                                        <li>Express</li>
-                                        <li>Sequelize</li>
-                                        <li>NGINX</li>
-                                        <li>ReactJs</li>
-                                        <li>Socket.io</li>
-                                    </ul>
-                                </div>
-
-                                <div class="item">
-                                    <h3 class="level-title">Working Tools</h3>
-                                    <ul>
-                                        <li>Linux</li>
-                                        <li>Windows</li>
-                                        <li>Git</li>
-                                        <li>Latex</li>
-                                    </ul>
-                                </div>
-
-                                <div class="item">
-                                    <h3 class="level-title">Innovative Methodologies</h3>
-                                    <ul>
-                                        <li>Design Thinking</li>
-                                        <li>Scrum Methodology</li>
-                                    </ul>
-                                </div>
-                                <!--
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Django<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                -->
-
-                                <!--
-                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
-                                        GitHub</a></p>
-                                        -->
+        <!-- Modal -->
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/bnppam.jpg"
+                                alt="TESS : Tool of Ethics, Security and Sustainability">
+                            <div class="card-body">
+                                <h5 class="card-title">TESS : Tool of Ethics, Security and Sustainability</h5>
+                                <p class="card-text">Short description here</p>
                             </div>
-                        </div>
-                        <!--//content-->
+                            
+                            
+                            <a href="https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-activity-6815909823708753921-uDIX" target="_blank" rel="noreferrer noopener"><button class="dark">Know More</button></a>
+                            
+                            
+                        
                     </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
+                </div>
 
-                <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><img src="assets/flags/england.svg"
-                                            class="flag" /><strong>English:</strong></span>
-                                    <span class="level">Fluent<br class="visible-xs" /></span>
-                                </li>
-                                <!--//item-->
-                                <li class="item">
-                                    <span class="title"><img src="assets/flags/france.svg"
-                                            class="flag" /><strong>French:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-sm visible-xs" /></span>
-                                </li>
-                                <li class="item">
-                                    <span class="title"><img src="assets/flags/germany.svg"
-                                            class="flag" /><strong>German:</strong></span>
-                                    <span class="level">Notions <br class="visible-sm visible-xs" /></span>
-                                </li>
-                                <li class="item">
-                                    <span class="title"><img src="assets/flags/spain.svg"
-                                            class="flag" /><strong>Spanish:</strong></span>
-                                    <span class="level">Beginner <br class="visible-sm visible-xs" /></span>
-                                </li>
-                                <!--//item-->
-                            </ul>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
 
-                <!--
-                <aside class="testimonials aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">
-                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he
-                                        is passionate about what he does. You can totally count on him to deliver your
-                                        projects!</p>
-                                </blockquote>
-                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur
-                                        commodo</span></p>
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/automatants.jpg"
+                                alt="Earning Calls Transcripts Analysis">
+                            <div class="card-body">
+                                <h5 class="card-title">Earning Calls Transcripts Analysis</h5>
+                                <p class="card-text"></p>
                             </div>
-                           
-
-                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
-                                    Linkedin</a></p>
-
-                        </div>
+                            
+                        
                     </div>
-                   
-                </aside>
-                -->
+                </div>
 
 
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/bnppam.jpg"
+                                alt="BNP Paribas DataChallenge">
+                            <div class="card-body">
+                                <h5 class="card-title">BNP Paribas DataChallenge</h5>
+                                <p class="card-text">I have participated to the first Data Responsible Challenge from BNP Paribas CIB. Using NLP technologies, with State-of-the-Art NLP models like T5, to make an eco-friendly prototype. By computing the carbon footprint of our models, we can select the best one based not only on his accuracy, but also its impact on the environment.</p>
+                            </div>
+                            
+                            
+                            <a href="https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-ethics-sustainable-activity-6739085784495792128-x4eW" target="_blank" rel="noreferrer noopener"><button class="dark">LinkedIn Post</button></a>
+                            
+                            
+                        
+                    </div>
+                </div>
 
 
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/bnppam.jpg"
+                                alt="Recommender System for Asset Management">
+                            <div class="card-body">
+                                <h5 class="card-title">Recommender System for Asset Management</h5>
+                                <p class="card-text">We created a recommender system that finds the best blog articles and internal resources for a given product. Using State-of-the-Art models such as DistilBERT, finBERT and Longformer we were able to summarize articles for the Sales, making easier the task of finding relevant documents.</p>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
 
+
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/runwaiz.jpg"
+                                alt="Runway Coefficient Computation">
+                            <div class="card-body">
+                                <h5 class="card-title">Runway Coefficient Computation</h5>
+                                <p class="card-text">We created a recommender system that finds the best blog articles and internal resources for a given product. Using State-of-the-Art models such as DistilBERT, finBERT and Longformer we were able to summarize articles for the Sales, making easier the task of finding relevant documents.</p>
+                            </div>
+                            
+                            
+                            <a href="https://www.linkedin.com/posts/boucasmarco_machinelearning-ai-airports-activity-6706131569767145472-UrSu" target="_blank" rel="noreferrer noopener"><button class="dark">Presentation Video</button></a>
+                            
+                            
+                        
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/flashbrand.jpg"
+                                alt="Emotion Recognition in Videos">
+                            <div class="card-body">
+                                <h5 class="card-title">Emotion Recognition in Videos</h5>
+                                <p class="card-text">We created an application to gather information from a video conversation in real-time. Text, Image and Sound were treated to gather as much information as possible. We included a small coach bot, to provide useful information during the presentation to improve the user performance.</p>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/twitter.jpg"
+                                alt="Tweet Analysis">
+                            <div class="card-body">
+                                <h5 class="card-title">Tweet Analysis</h5>
+                                <p class="card-text">We created a system to evaluate "how famous a movie is", based on twitter. Using different vectorization techniques, from TF-IDF to LSTM models, we were able to give a popularity measure based on all tweets about a movie. As a demonstration, we used the movie "Godzilla", and the results were very similar to the "Rotten Tomatoes score" (our reference).</p>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/clustering.jpg"
+                                alt="Clustering Pedagogical Platform">
+                            <div class="card-body">
+                                <h5 class="card-title">Clustering Pedagogical Platform</h5>
+                                <p class="card-text">We created a Pedagogical Platform for french students to learn and discover clustering methods and algorithms. Our website explains 3 algorithms : K-Means, hierarchical clustering and DBSCAN, with for each algorithm a small desciption, a visualisation of the process, a notebook exercise and an small summary on essential information.</p>
+                            </div>
+                            
+                            
+                            <a href="https://marco.boucas.fr/poleIA-clustering/index.html" target="_blank" rel="noreferrer noopener"><button class="dark">Visit the Platform</button></a>
+                            
+                            
+                        
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/viarezo.jpg"
+                                alt="Palaborne">
+                            <div class="card-body">
+                                <h5 class="card-title">Palaborne</h5>
+                                <p class="card-text">As an Internet Provider, ViaRézo has a lot of machines, especially wifi hotspots (about 300). To visualize all these elements, I created Palaborne, an application that display all elements of the infrastructure in 3D, to help detect geographical problems.</p>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/treasurehunt.jpg"
+                                alt="TreasureHunt">
+                            <div class="card-body">
+                                <h5 class="card-title">TreasureHunt</h5>
+                                <p class="card-text">Each year, ViaRézo is organising a Treasure Hunt on the campus of CentraleSupélec, allowing new students to discover the buildings and some key locations. I have developped a Treasure Hunt website, handling all the teams (about 250 students) to help them found their next activity, making easier the staff work during the event.</p>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
+                    
+                        <div class="card project-card h-100">
+                            <img class="card-img-top" src="/assets/images/projects/automatants.jpg"
+                                alt="Automatants Website">
+                            <div class="card-body">
+                                <h5 class="card-title">Automatants Website</h5>
+                                <p class="card-text">To increase the visibility of our association, I created a website for our association. We also have some new features, such as a member access, with all information about the current projects and formations, alongside a system of formations and rewards, to make easier the development of new skills.</p>
+                            </div>
+                            
+                            
+                            <a href="https://automatants.cs-campus.fr/" target="_blank" rel="noreferrer noopener"><button class="dark">Visit the Website!</button></a>
+                            
+                            
+                        
+                    </div>
+                </div>
+
+
+                
             </div>
-            <!--//secondary-->
         </div>
-        <!--//row-->
-    </div>
-    <!--//masonry-->
 
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-        <div class="container text-center">
-            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
-                    href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div>
-        <!--//container-->
-    </footer>
-    <!--//footer-->
+        <!---
+        <hr />
+        <h3>Certifications</h3>
+        <ul>
+           
+            <li>
+                Natural Language Processing
+            </li>
+           
+        </ul>
+        -->
+        <div style="margin-bottom: 64px;"></div>
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
-    <!-- Christmas -->
-    <script type="text/javascript" src="christmas/christmas.js"></script>
 </body>
 
 </html>
