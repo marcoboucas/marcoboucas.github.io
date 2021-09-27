@@ -64,6 +64,8 @@ header .header-buttons{
     align-items: center;
     justify-content: center;
     margin-top: 16px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 .header-buttons button{text-transform: uppercase;
 }
