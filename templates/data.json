@@ -7,12 +7,79 @@
     {
       "id": "coursera-nlp",
       "miniature": "deeplearningai.jfif",
-      "name": "Natural Language Processing",
+      "name": "Natural Language Processing Specialization",
       "organisation": "Coursera, DeepLearning.AI",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/JL5VPNFSFWJR?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/JL5VPNFSFWJR"
+    },
+    {
+      "id": "coursera-gan",
+      "miniature": "deeplearningai.jfif",
+      "name": "Generative Adversarial Networks (GANs) Specialization",
+      "organisation": "Coursera, DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/4D8VMTZ55MRN"
     }
   ],
   "portfolio": [
+    {
+      "company": {
+        "description": "",
+        "name": "",
+        "url": ""
+      },
+      "id": "cs-project-health-challenge",
+      "links": [
+  
+      ],
+      "miniature": "project-challenge-health.jpg",
+      "name": "DataChallenge: Health NLP",
+      "short_description": "",
+      "tags": ["AI", "Python", "Machine Learning", "NER", "Question Answering", "NLP"]
+    },
+    {
+      "company": {
+        "description": "",
+        "name": "",
+        "url": ""
+      },
+      "id": "cs-project-deep-learning",
+      "links": [
+  
+      ],
+      "miniature": "deep-learning-project.jpg",
+      "name": "Price Detection in Supermarket photos",
+      "short_description": "",
+      "tags": ["AI", "Python", "Machine Learning", "Computer Vision", "Object Detection"]
+    },
+    {
+      "company": {
+        "description": "",
+        "name": "",
+        "url": ""
+      },
+      "id": "cs-project-3A",
+      "links": [
+  
+      ],
+      "miniature": "project-3a.jpg",
+      "name": "Summarization of french medical documents",
+      "short_description": "",
+      "tags": ["AI", "Python", "Machine Learning", "NLP", "Summarization", "BioBert"]
+    },
+    {
+      "company": {
+        "description": "",
+        "name": "LVMH Research",
+        "url": ""
+      },
+      "id": "cs-lvmh-filiere",
+      "links": [
+  
+      ],
+      "miniature": "lvmh-recherche-innovation.jpg",
+      "name": "LVMH Research: Intelligent dataviz",
+      "short_description": "Creation of a data visualisation tool that allows formulators to search for formulas using natural language. Similarity analysis to extract the relevant tests records for a specific need. Visualisation of the results on the fly.",
+      "tags": ["AI", "Python", "Machine Learning", "Scikit-Learn", "NLP", "DataViz"]
+    },
     {
       "company": {
         "description": "BivwAk! is BNP Paribas' transformation hub, that aims at developing new services and new business models, accelerating the BNP Paribas engagement strategy",
