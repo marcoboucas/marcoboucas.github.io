@@ -62,10 +62,10 @@
                                     Github
                                 </button>
                             </a>
-                            <a href="#certifications" ><button>
-                                Certifications
-                            </button>
-                        </a>
+                            <a href="#certifications"><button>
+                                    Certifications
+                                </button>
+                            </a>
                         </a>
                     </div>
                 </div>
@@ -94,20 +94,23 @@
             <div class="row">
                 {% for project in data['portfolio'] %}
                 <div class="col-md-6 col-sm-12 col-lg-4" style="margin-bottom: 16px;">
-                    
-                        <div class="card project-card h-100">
-                            <img class="card-img-top" src="/assets/images/projects/{{project['miniature']}}"
-                                alt="{{project['name']}}">
-                            <div class="card-body" style="padding-bottom: 0px;margin-bottom:-16px;">
-                                <h5 class="card-title">{{project['name']}}</h5>
-                                <p class="card-text">{{project['short_description']}}</p>
-                            </div>
-                            {% if "links" in project %}
+
+                    <div class="card project-card h-100">
+                        <img class="card-img-top" src="/assets/images/projects/{{project['miniature']}}"
+                            alt="{{project['name']}}">
+                        <div class="card-body" style="padding-bottom: 0px;margin-bottom:-16px;">
+                            <h5 class="card-title">{{project['name']}}</h5>
+                            <p class="card-text">{{project['short_description']}}</p>
+                        </div>
+                        {% if "links" in project %}
+                        <div class="card-links">
                             {% for link in project['links'] %}
-                            <a href="{{link['url']}}" target="_blank" rel="noreferrer noopener"><button class="dark">{{link['text']}}</button></a>
+                            <a href="{{link['url']}}" target="_blank" rel="noreferrer noopener"><button
+                                    class="dark">{{link['text']}}</button></a>
                             {% endfor %}
-                            {% endif %}
-                        
+                        </div>
+                        {% endif %}
+
                     </div>
                 </div>
 
@@ -116,20 +119,21 @@
             </div>
         </div>
 
-        
+
         <hr />
         <h3 id="certifications">Certifications</h3>
         <ul style="list-style-type: none;">
-           {% for certification in data['certifications'] %}
-           <a href="{{certification['url']}}"  target="_blank" rel="noreferrer noopener"class="certification-text">
-            <li class="certification">
-                <img src="/assets/images/certifications/{{certification['miniature']}}" alt="{{certification['name']}}" class="certification-image"/>{{certification['name']}}
-               
-            </li>
-        </a>
-           {% endfor %}
+            {% for certification in data['certifications'] %}
+            <a href="{{certification['url']}}" target="_blank" rel="noreferrer noopener" class="certification-text">
+                <li class="certification">
+                    <img src="/assets/images/certifications/{{certification['miniature']}}"
+                        alt="{{certification['name']}}" class="certification-image" />{{certification['name']}}
+
+                </li>
+            </a>
+            {% endfor %}
         </ul>
-        
+
         <div style="margin-bottom: 64px;"></div>
 
     </section>

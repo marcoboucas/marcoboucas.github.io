@@ -1,8 +1,8 @@
 """Generate the website."""
 
-import os
 import json
 import logging
+import os
 
 from jinja2 import Template
 
@@ -14,7 +14,7 @@ def generate_website():
         html_code = file.read()
     with open(os.path.join(TEMPLATE_FOLDER, "data.json"), "r") as file:
         data = json.load(file)
-    
+
     template = Template(html_code)
     with open('index.html', "w") as file:
         file.write(template.render(data=data))
