@@ -13,17 +13,20 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, className = '', style }: ProjectCardProps) {
   return (
-    <div className={`group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden ${className}`} style={style}>
+    <div className={`group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl hover-lift hover-glow transition-all duration-500 transform overflow-hidden border border-gray-200/50 dark:border-gray-700/50 ${className}`} style={style}>
       {/* Project Image */}
       <div className="relative h-48 w-full overflow-hidden">
         <Image
-          src={`/assets/images/projects/${project.miniature}`}
+          src={`/images/projects/${project.miniature}`}
           alt={project.name}
           fill
-          className="object-cover group-hover:scale-110 transition-transform duration-300"
+          className="object-cover group-hover:scale-110 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+        
+        {/* Shimmer effect on hover */}
+        <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-shimmer-gradient opacity-30" />
       </div>
 
       {/* Content */}
