@@ -20,13 +20,13 @@ export default function CertificationCard({ certification, className = '', style
       className={`group block ${className}`}
       style={style}
     >
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-4 border border-gray-200 dark:border-gray-700">
+      <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg hover-lift transition-all duration-500 transform p-4 border border-gray-200/50 dark:border-gray-700/50 hover-glow">
         <div className="flex items-center space-x-4">
           {/* Certification Logo */}
           <div className="flex-shrink-0">
             <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-700">
               <Image
-                src={`/assets/images/certifications/${certification.miniature}`}
+                src={`/images/certifications/${certification.miniature}`}
                 alt={certification.organisation}
                 fill
                 className="object-cover"
