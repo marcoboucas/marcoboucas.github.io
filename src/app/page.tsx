@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50/30 dark:from-gray-800 dark:to-blue-900/20 relative overflow-hidden">
+      <section className="py-20 relative overflow-hidden section-bg">
         <div className="section-container relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4 animate-slide-up">
