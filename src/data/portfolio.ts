@@ -2,10 +2,10 @@ import { PortfolioData } from '@/types/portfolio';
 
 export const portfolioData: PortfolioData = {
   "title": "Marco Boucas",
-  "subtitle": "Data Scientist student at CentraleSupélec",
+  "subtitle": "AI Engineering Manager",
   "aboutMe": {
-    "p1": "I am a dynamic and enthusiastic Master year student at @CentraleSupélec, one of France top Engineering Schools. Since I am 10-year old, I learned how to create websites for fun! And nowadays, <strong>I am now focusing on Artificial Intelligence, passionate by this new domain of computer science, especially when applied to text analysis.</strong>",
-    "p2": "Selected among the most talented tech-focused students, I joined the @ParisDigitalLab, a program of excellence designed to meet organisations' digital needs. Thanks to its \"learning by doing\" pedagogy, I intend to develop a better understanding of new technologies and the issues they raise and tackle."
+    "p1": "Je suis un <strong>AI Engineering Manager</strong> passionné par l'innovation technologique et l'application de l'intelligence artificielle aux défis du monde réel. Fort d'une formation d'ingénieur à CentraleSupélec et d'une expertise approfondie en IA, je dirige des équipes techniques dans le développement de solutions d'IA avancées.",
+    "p2": "Actuellement chez <strong>Illuin Technology</strong>, je supervise le développement de produits d'IA révolutionnaires pour l'analyse de conversations en temps réel et à froid, permettant d'extraire des insights précieux et de mettre à jour automatiquement les systèmes CRM. Mon approche combine excellence technique, leadership d'équipe et vision stratégique pour transformer les concepts d'IA en solutions commerciales impactantes."
   },
   "certifications": [
     {
@@ -31,6 +31,27 @@ export const portfolioData: PortfolioData = {
     }
   ],
   "portfolio": [
+    {
+      "company": {
+        "description": "Illuin Technology est une entreprise innovante spécialisée dans les solutions d'intelligence artificielle pour l'entreprise.",
+        "name": "Illuin Technology",
+        "url": "https://illuin.tech"
+      },
+      "id": "illuin-ai-conversation-analysis",
+      "links": [],
+      "miniature": "illuin-ai-analysis.jpg",
+      "name": "AI Conversation Analysis Platform",
+      "short_description": "En tant qu'AI Engineering Manager, j'ai dirigé le développement d'une plateforme d'IA révolutionnaire pour l'analyse de conversations en temps réel et à froid. Cette solution extrait automatiquement des insights précieux des interactions clients et met à jour les systèmes CRM en temps réel, transformant la façon dont les entreprises comprennent et gèrent leurs relations clients.",
+      "tags": [
+        "AI",
+        "NLP",
+        "Real-time Analysis",
+        "CRM Integration",
+        "Machine Learning",
+        "Team Leadership",
+        "Product Management"
+      ]
+    },
     {
       "company": {
         "description": "",
