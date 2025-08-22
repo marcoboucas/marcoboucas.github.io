@@ -30,7 +30,7 @@ export function HeroSection({ title, subtitle }: HeroSectionProps) {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
               onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Voir mes projets
+              Explore my projects
             </Button>
             <Button
               variant="outline"
@@ -38,7 +38,7 @@ export function HeroSection({ title, subtitle }: HeroSectionProps) {
               className="px-8 py-3 text-lg bg-transparent"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Me contacter
+              Contact me
             </Button>
           </div>
 
@@ -54,7 +54,7 @@ export function HeroSection({ title, subtitle }: HeroSectionProps) {
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12 rounded-full hover:bg-accent">
-              <a href="mailto:contact@marcoboucas.com">
+              <a href="mailto:marco.boucas@hotmail.fr">
                 <Mail className="h-6 w-6" />
               </a>
             </Button>

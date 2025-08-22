@@ -47,7 +47,7 @@ export function CertificationsSection({ certifications }: CertificationsSectionP
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
                       >
-                        Voir le certificat
+                        View Certificate
                         <ExternalLink className="h-4 w-4" />
                       </a>
                     </div>

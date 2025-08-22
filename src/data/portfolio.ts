@@ -4,8 +4,8 @@ export const portfolioData: PortfolioData = {
   "title": "Marco Boucas",
   "subtitle": "AI Engineering Manager",
   "aboutMe": {
-    "p1": "Je suis un <strong>AI Engineering Manager</strong> passionné par l'innovation technologique et l'application de l'intelligence artificielle aux défis du monde réel. Fort d'une formation d'ingénieur à CentraleSupélec et d'une expertise approfondie en IA, je dirige des équipes techniques dans le développement de solutions d'IA avancées.",
-    "p2": "Actuellement chez <strong>Illuin Technology</strong>, je supervise le développement de produits d'IA révolutionnaires pour l'analyse de conversations en temps réel et à froid, permettant d'extraire des insights précieux et de mettre à jour automatiquement les systèmes CRM. Mon approche combine excellence technique, leadership d'équipe et vision stratégique pour transformer les concepts d'IA en solutions commerciales impactantes."
+    "p1": "I'm an <strong>AI Engineering Manager</strong> driven by technological innovation and the application of artificial intelligence to real-world challenges. With an engineering background from CentraleSupélec and deep expertise in AI, I lead technical teams in developing cutting-edge AI solutions.",
+    "p2": "Currently at <strong>Illuin Technology</strong>, I oversee the development of groundbreaking AI products for real-time and post-call conversation analysis, enabling businesses to extract valuable insights and automatically update CRM systems. My approach combines technical excellence, team leadership, and strategic vision to transform AI concepts into impactful commercial solutions."
   },
   "certifications": [
     {
@@ -33,7 +33,7 @@ export const portfolioData: PortfolioData = {
   "portfolio": [
     {
       "company": {
-        "description": "Illuin Technology est une entreprise innovante spécialisée dans les solutions d'intelligence artificielle pour l'entreprise.",
+        "description": "Illuin Technology is an innovative company specializing in artificial intelligence solutions for enterprises.",
         "name": "Illuin Technology",
         "url": "https://illuin.tech"
       },
@@ -41,7 +41,7 @@ export const portfolioData: PortfolioData = {
       "links": [],
       "miniature": "illuin-ai-analysis.jpg",
       "name": "AI Conversation Analysis Platform",
-      "short_description": "En tant qu'AI Engineering Manager, j'ai dirigé le développement d'une plateforme d'IA révolutionnaire pour l'analyse de conversations en temps réel et à froid. Cette solution extrait automatiquement des insights précieux des interactions clients et met à jour les systèmes CRM en temps réel, transformant la façon dont les entreprises comprennent et gèrent leurs relations clients.",
+      "short_description": "As AI Engineering Manager, I led the development of a revolutionary AI platform for real-time and post-call conversation analysis. This solution automatically extracts valuable insights from customer interactions and updates CRM systems in real-time, transforming how businesses understand and manage customer relationships.",
       "tags": [
         "AI",
         "NLP",
@@ -54,15 +54,15 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "",
-        "name": "",
-        "url": ""
+        "description": "CentraleSupélec academic project",
+        "name": "CentraleSupélec",
+        "url": "https://www.centralesupelec.fr/"
       },
       "id": "cs-project-health-challenge",
       "links": [],
       "miniature": "project-challenge-health.jpg",
       "name": "DataChallenge: Health NLP",
-      "short_description": "",
+      "short_description": "Developed natural language processing solutions for healthcare data analysis, focusing on named entity recognition and question answering systems to extract medical insights from clinical documents.",
       "tags": [
         "AI",
         "Python",
@@ -74,9 +74,9 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "",
-        "name": "",
-        "url": ""
+        "description": "CentraleSupélec deep learning project",
+        "name": "CentraleSupélec",
+        "url": "https://www.centralesupelec.fr/"
       },
       "id": "cs-project-deep-learning",
       "links": [
@@ -95,7 +95,7 @@ export const portfolioData: PortfolioData = {
       ],
       "miniature": "deep-learning-project.jpg",
       "name": "Price Detection in Supermarket photos",
-      "short_description": "",
+      "short_description": "Developed a computer vision system using deep learning to automatically detect and extract price information from supermarket photos. Implemented object detection algorithms to identify products and their associated price tags with high accuracy.",
       "tags": [
         "AI",
         "Python",
@@ -106,15 +106,15 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "",
-        "name": "",
-        "url": ""
+        "description": "CentraleSupélec final year project",
+        "name": "CentraleSupélec",
+        "url": "https://www.centralesupelec.fr/"
       },
       "id": "cs-project-3A",
       "links": [],
       "miniature": "project-3a.jpg",
       "name": "Summarization of french medical documents",
-      "short_description": "",
+      "short_description": "Created an AI-powered summarization system for French medical documents using BioBert and advanced NLP techniques. The system helps healthcare professionals quickly extract key information from lengthy medical reports and clinical notes.",
       "tags": [
         "AI",
         "Python",

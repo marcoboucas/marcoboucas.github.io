@@ -27,10 +27,10 @@ export function NavigationMenu() {
   }
 
   const menuItems = [
-    { id: "hero", label: "Accueil" },
-    { id: "about", label: "À propos" },
+    { id: "hero", label: "Home" },
+    { id: "about", label: "About" },
     { id: "certifications", label: "Certifications" },
-    { id: "projects", label: "Projets" },
+    { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ]
 
@@ -61,7 +61,7 @@ export function NavigationMenu() {
           variant="outline"
           size="icon"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="bg-background/80 backdrop-blur-md border-border"
+          className="bg-background/90 backdrop-blur-md rounded-full shadow-lg border-0 hover:shadow-xl transition-all duration-200"
         >
           {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
         </Button>
