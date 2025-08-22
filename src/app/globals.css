@@ -55,6 +55,11 @@
   
   body {
     background: hsl(var(--background));
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.02) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--accent) / 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(var(--primary) / 0.01) 0%, transparent 50%);
+    min-height: 100vh;
     color: hsl(var(--foreground));
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   }

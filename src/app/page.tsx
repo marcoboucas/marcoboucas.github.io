@@ -38,7 +38,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="text-muted-foreground">
-              © 2024 Marco Boucas. Construit avec Next.js, Tailwind CSS et shadcn/ui.
+              © 2024 Marco Boucas. Built with Next.js, Tailwind CSS and shadcn/ui.
             </p>
           </div>
         </div>
