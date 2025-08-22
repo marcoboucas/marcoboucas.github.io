@@ -1,5 +1,7 @@
 # Marco Boucas Portfolio
 
+edited with an ai
+
 A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS, showcasing Marco Boucas' work as a Data Scientist and AI Engineer.
 
 ## 🚀 Features
