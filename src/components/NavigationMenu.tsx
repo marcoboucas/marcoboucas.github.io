@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 export function NavigationMenu() {
   const [isVisible, setIsVisible] = useState(false)
@@ -18,19 +19,32 @@ export function NavigationMenu() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-      setIsMobileMenuOpen(false)
-    }
-  }
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    // A small delay to ensure that the sections are rendered before scrolling
+    setTimeout(() => {
+      handleHashChange();
+    }, 100);
+
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   const menuItems = [
     { id: "hero", label: "Home" },
     { id: "about", label: "About" },
-    { id: "certifications", label: "Certifications" },
     { id: "projects", label: "Projects" },
+    { id: "certifications", label: "Certifications" },
     { id: "contact", label: "Contact" },
   ]
 
@@ -43,13 +57,13 @@ export function NavigationMenu() {
         <div className="bg-background/80 backdrop-blur-md border border-border rounded-full px-6 py-3 shadow-lg">
           <div className="flex items-center gap-6">
             {menuItems.map((item) => (
-              <button
+              <Link
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200"
+                href={`#${item.id}`}
+                className="cursor-pointer text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200"
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
           </div>
         </div>
@@ -61,7 +75,7 @@ export function NavigationMenu() {
           variant="outline"
           size="icon"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="bg-background/90 backdrop-blur-md rounded-full shadow-lg border-0 hover:shadow-xl transition-all duration-200"
+          className="cursor-pointer bg-background/90 backdrop-blur-md rounded-full shadow-lg border-0 hover:shadow-xl transition-all duration-200"
         >
           {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
         </Button>
@@ -70,13 +84,14 @@ export function NavigationMenu() {
           <div className="absolute top-12 right-0 bg-background/95 backdrop-blur-md border border-border rounded-lg p-4 shadow-lg min-w-[200px]">
             <div className="flex flex-col gap-3">
               {menuItems.map((item) => (
-                <button
+                <Link
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-left text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 py-2"
+                  href={`#${item.id}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="cursor-pointer text-left text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 py-2"
                 >
                   {item.label}
-                </button>
+                </Link>
               ))}
             </div>
           </div>

@@ -24,22 +24,30 @@ export function HeroSection({ title, subtitle }: HeroSectionProps) {
             {subtitle}
           </p>
 
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
+              variant="outline"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg cursor-pointer"
               onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
             >
               Explore my projects
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="px-8 py-3 text-lg bg-transparent"
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            <a
+              href="/resume.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contact me
-            </Button>
+              <Button
+                size="lg"
+                
+                className="px-8 py-3 text-lg cursor-pointer"
+              >
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           <div className="flex justify-center gap-6 pt-8">
