@@ -37,6 +37,35 @@ export const portfolioData: PortfolioData = {
         "name": "Illuin Technology",
         "url": "https://illuin.tech"
       },
+      "id": "illuin-speech-analyzer",
+      "links": [
+        {
+          "text": "Visit Illuin Technology",
+          "url": "https://illuin.tech"
+        }
+      ],
+      "miniature": "illuin-ai-analysis.jpg",
+      "name": "Speech Analyzer - AI Conversational Platform",
+      "short_description": "As product lead, I spearheaded the creation of Speech Analyzer, an innovative AI conversational platform for real-time and post-call speech analysis. This groundbreaking product went from concept to product-market fit in just 1.5 years, with a comprehensive business plan that demonstrated strong market demand. Speech Analyzer leverages advanced NLP and speech recognition technologies to automatically analyze customer conversations, extract actionable insights, and provide real-time feedback to sales and support teams. The platform achieved remarkable success by addressing critical pain points in customer communication analysis, becoming a cornerstone solution for enterprises seeking to optimize their customer interactions and drive data-informed decision-making.",
+      "tags": [
+        "AI",
+        "NLP",
+        "Speech Recognition",
+        "Real-time Analysis",
+        "Product Management",
+        "Business Plan",
+        "Product-Market Fit",
+        "Conversational AI",
+        "Machine Learning",
+        "Team Leadership"
+      ]
+    },
+    {
+      "company": {
+        "description": "Illuin Technology is an innovative company specializing in artificial intelligence solutions for enterprises.",
+        "name": "Illuin Technology",
+        "url": "https://illuin.tech"
+      },
       "id": "illuin-ai-conversation-analysis",
       "links": [],
       "miniature": "illuin-ai-analysis.jpg",
