@@ -33,7 +33,7 @@ export default function ProjectCard({ project, className = '', style }: ProjectC
       <div className="p-6 space-y-4">
         {/* Company Badge */}
         {project.company.name && (
-          <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">
+          <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-700 dark:bg-primary-700 dark:text-primary-50">
             {project.company.name}
           </div>
         )}
@@ -55,13 +55,13 @@ export default function ProjectCard({ project, className = '', style }: ProjectC
           {project.tags.slice(0, 4).map((tag, index) => (
             <span
               key={index}
-              className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-accent-100 text-accent-700 dark:bg-accent-900 dark:text-accent-300"
+              className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-accent-100 text-accent-700 dark:bg-accent-700 dark:text-accent-50"
             >
               {tag}
             </span>
           ))}
           {project.tags.length > 4 && (
-            <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400">
+            <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-gray-100 text-gray-600 dark:bg-gray-600 dark:text-gray-100">
               +{project.tags.length - 4}
             </span>
           )}
