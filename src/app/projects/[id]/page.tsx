@@ -45,13 +45,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <main className="min-h-screen bg-gradient-to-br from-background via-muted/10 to-background">
       {/* Navigation */}
-      <nav className="bg-white dark:bg-gray-800 shadow-sm">
+      <nav className="bg-card/80 backdrop-blur-sm border-b border-border shadow-sm">
         <div className="section-container py-4">
           <Link
             href="/"
-            className="inline-flex items-center text-primary-600 hover:text-primary-700 transition-colors duration-200"
+            className="inline-flex items-center text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -62,7 +62,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-16 bg-white dark:bg-gray-800">
+      <section className="py-16 bg-card/50 backdrop-blur-sm">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             {/* Project Image */}
