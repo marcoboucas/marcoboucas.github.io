@@ -2,9 +2,9 @@ import { PortfolioData } from '@/types/portfolio';
 
 export const portfolioData: PortfolioData = {
   "title": "Marco Boucas",
-  "subtitle": "Responsable Ingénierie IA",
+  "subtitle": "Manageur IA",
   "aboutMe": {
-    "p1": "Je suis un <strong>Responsable Ingénierie IA</strong> passionné par l'innovation technologique et l'application de l'intelligence artificielle aux défis du monde réel. Avec une formation d'ingénieur de CentraleSupélec et une expertise approfondie en IA, je dirige des équipes techniques dans le développement de solutions IA de pointe.",
+    "p1": "Je suis un <strong>Manageur IA</strong> passionné par l'innovation technologique et l'application de l'intelligence artificielle aux défis du monde réel. Avec une formation d'ingénieur de CentraleSupélec et une expertise approfondie en IA, je dirige des équipes techniques dans le développement de solutions IA de pointe.",
     "p2": "Actuellement chez <strong>Illuin Technology</strong>, je supervise le développement de produits IA innovants pour l'analyse de conversations en temps réel et post-appel, permettant aux entreprises d'extraire des informations précieuses et de mettre à jour automatiquement leurs systèmes CRM. Mon approche combine excellence technique, leadership d'équipe et vision stratégique pour transformer les concepts IA en solutions commerciales à fort impact."
   },
   "certifications": [
@@ -47,6 +47,7 @@ export const portfolioData: PortfolioData = {
       "miniature": "illuin-ai-analysis.jpg",
       "name": "Speech Analyzer - Plateforme IA Conversationnelle",
       "short_description": "En tant que chef de produit, j'ai dirigé la création de Speech Analyzer, une plateforme conversationnelle IA innovante pour l'analyse de la parole en temps réel et post-appel. Ce produit révolutionnaire est passé du concept à l'adéquation produit-marché en seulement 1,5 an, avec un business plan complet démontrant une forte demande du marché. Speech Analyzer exploite des technologies avancées de NLP et de reconnaissance vocale pour analyser automatiquement les conversations clients, extraire des informations exploitables et fournir des retours en temps réel aux équipes de vente et de support. La plateforme a obtenu un succès remarquable en résolvant des points de douleur critiques dans l'analyse des communications clients, devenant une solution clé pour les entreprises cherchant à optimiser leurs interactions clients et à prendre des décisions basées sur les données.",
+      "backgroundColor": "#1a1a2e",
       "tags": [
         "AI",
         "NLP",
@@ -70,7 +71,8 @@ export const portfolioData: PortfolioData = {
       "links": [],
       "miniature": "illuin-ai-analysis.jpg",
       "name": "Plateforme d'Analyse de Conversations IA",
-      "short_description": "En tant que Responsable Ingénierie IA, j'ai dirigé le développement d'une plateforme IA révolutionnaire pour l'analyse de conversations en temps réel et post-appel. Cette solution extrait automatiquement des informations précieuses des interactions clients et met à jour les systèmes CRM en temps réel, transformant la façon dont les entreprises comprennent et gèrent les relations clients.",
+      "short_description": "En tant que AI Engineering Manager, j'ai dirigé le développement d'une plateforme IA révolutionnaire pour l'analyse de conversations en temps réel et post-appel. Cette solution extrait automatiquement des informations précieuses des interactions clients et met à jour les systèmes CRM en temps réel, transformant la façon dont les entreprises comprennent et gèrent les relations clients.",
+      "backgroundColor": "#1a1a2e",
       "tags": [
         "AI",
         "NLP",
@@ -189,6 +191,7 @@ export const portfolioData: PortfolioData = {
       "miniature": "tess.jpg",
       "name": "TESS : Outil d'Éthique, Sécurité et Durabilité",
       "short_description": "Développement de TESS (Tool of Ethic, Sustainability & Security). Utilisation du web scraping et du NLP pour analyser automatiquement les informations juridiques et de sécurité des fournisseurs de services à partir de données publiques.",
+      "backgroundColor": "#00a651",
       "tags": [
         "AI",
         "NLP",
@@ -241,6 +244,7 @@ export const portfolioData: PortfolioData = {
       "miniature": "tess.jpg",
       "name": "BNP Paribas DataChallenge",
       "short_description": "J'ai participé au premier Data Responsible Challenge de BNP Paribas CIB. Utilisation de technologies NLP, avec des modèles NLP de pointe comme T5, pour créer un prototype éco-responsable. En calculant l'empreinte carbone de nos modèles, nous pouvons sélectionner le meilleur non seulement en fonction de sa précision, mais aussi de son impact sur l'environnement.",
+      "backgroundColor": "#00a651",
       "tags": [
         "AI",
         "NLP",
@@ -369,6 +373,7 @@ export const portfolioData: PortfolioData = {
       "miniature": "viarezo.jpg",
       "name": "Palaborne",
       "short_description": "En tant que Fournisseur d'Accès Internet, ViaRézo possède de nombreuses machines, notamment des bornes wifi (environ 300). Pour visualiser tous ces éléments, j'ai créé Palaborne, une application qui affiche tous les éléments de l'infrastructure en 3D, pour aider à détecter les problèmes géographiques.",
+      "backgroundColor": "#ff6b35",
       "tags": [
         "Javascript",
         "DataViz",
@@ -409,6 +414,7 @@ export const portfolioData: PortfolioData = {
       "miniature": "automatants.jpg",
       "name": "Site Web Automatants",
       "short_description": "Pour augmenter la visibilité de notre association, j'ai créé un site web pour notre association. Nous avons également quelques nouvelles fonctionnalités, comme un accès membre, avec toutes les informations sur les projets et formations en cours, ainsi qu'un système de formations et de récompenses, pour faciliter le développement de nouvelles compétences.",
+      "backgroundColor": "#4285f4",
       "tags": [
         "Web",
         "Javascript",

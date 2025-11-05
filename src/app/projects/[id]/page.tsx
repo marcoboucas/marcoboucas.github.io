@@ -1,6 +1,9 @@
 import { notFound } from 'next/navigation';
 import { portfolioData } from '@/data/portfolio';
 import { Project } from '@/types/portfolio';
+import { getContrastColor } from '@/lib/utils';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -78,7 +81,21 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div className="space-y-6">
               {/* Company Badge */}
               {project.company.name && (
-                <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300">
+                <div 
+                  className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium"
+                  style={{
+                    backgroundColor: project.backgroundColor 
+                      ? getContrastColor(project.backgroundColor) === "white" 
+                        ? "rgba(255, 255, 255, 0.9)" 
+                        : "rgba(0, 0, 0, 0.9)"
+                      : "rgba(59, 130, 246, 0.1)",
+                    color: project.backgroundColor 
+                      ? getContrastColor(project.backgroundColor) === "white" 
+                        ? "black" 
+                        : "white"
+                      : "rgba(30, 64, 175, 1)"
+                  }}
+                >
                   {project.company.url ? (
                     <Link 
                       href={project.company.url} 
@@ -116,14 +133,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               )}
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag, index) => (
-                  <span
+                  <Badge
                     key={index}
-                    className="inline-flex items-center px-3 py-1 rounded-md text-sm font-medium bg-accent-100 text-accent-700 dark:bg-accent-900 dark:text-accent-300"
+                    variant="secondary"
+                    className="px-3 py-1 border-0 bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
                   >
                     {tag}
-                  </span>
+                  </Badge>
                 ))}
               </div>
 
@@ -152,10 +170,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </section>
 
       {/* Related Projects */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gradient-to-br from-background via-muted/20 to-background">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+            <h2 className="text-2xl font-bold text-foreground mb-8">
               Autres Projets
             </h2>
             
@@ -164,31 +182,50 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 .filter((p) => p.id !== project.id)
                 .slice(0, 4)
                 .map((relatedProject) => (
-                  <Link
+                  <Card
                     key={relatedProject.id}
-                    href={`/projects/${relatedProject.id}`}
-                    className="group block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
+                    className="group border-0 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden cursor-pointer bg-card/80 backdrop-blur-sm hover:bg-card/90"
                   >
-                    <div className="relative h-32 w-full">
-                      <Image
-                        src={`/images/projects/${relatedProject.miniature}`}
-                        alt={relatedProject.name}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
-                        sizes="(max-width: 768px) 100vw, 448px"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200">
-                        {relatedProject.name}
-                      </h3>
-                      {relatedProject.company.name && (
-                        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                          {relatedProject.company.name}
-                        </p>
-                      )}
-                    </div>
-                  </Link>
+                    <Link href={`/projects/${relatedProject.id}`}>
+                      <div className="relative h-32 w-full overflow-hidden">
+                        <Image
+                          src={`/images/projects/${relatedProject.miniature}`}
+                          alt={relatedProject.name}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-300"
+                          sizes="(max-width: 768px) 100vw, 448px"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        
+                        {relatedProject.company.name && (
+                          <div className="absolute top-2 left-2">
+                            <Badge 
+                              className="backdrop-blur-md border-0 shadow-lg font-medium text-xs"
+                              style={{
+                                backgroundColor: relatedProject.backgroundColor 
+                                  ? getContrastColor(relatedProject.backgroundColor) === "white" 
+                                    ? "rgba(255, 255, 255, 0.95)" 
+                                    : "rgba(0, 0, 0, 0.85)"
+                                  : "rgba(255, 255, 255, 0.95)",
+                                color: relatedProject.backgroundColor 
+                                  ? getContrastColor(relatedProject.backgroundColor) === "white" 
+                                    ? "black" 
+                                    : "white"
+                                  : "black"
+                              }}
+                            >
+                              {relatedProject.company.name}
+                            </Badge>
+                          </div>
+                        )}
+                      </div>
+                      <CardContent className="p-4">
+                        <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-200">
+                          {relatedProject.name}
+                        </h3>
+                      </CardContent>
+                    </Link>
+                  </Card>
                 ))}
             </div>
           </div>

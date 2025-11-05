@@ -18,6 +18,7 @@ export interface Project {
   tags: string[];
   links?: Link[];
   company: Company;
+  backgroundColor?: string; // Main background color of the project image, defaults to white
 }
 
 export interface Certification {

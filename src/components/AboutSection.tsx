@@ -29,14 +29,14 @@ export function AboutSection({ aboutMe }: AboutSectionProps) {
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-8 flex items-center justify-center relative overflow-hidden">
                 <Image
-                  src="/images/personal.jpg"
+                  src="/images/personal.jpeg"
                   alt="Marco Boucas"
                   fill
                   className="rounded-xl object-cover"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold">
-                Responsable Ingénierie IA
+                AI Engineering Manager
               </div>
             </div>
           </div>

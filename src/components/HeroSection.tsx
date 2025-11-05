@@ -32,7 +32,7 @@ export function HeroSection({ title, subtitle }: HeroSectionProps) {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg cursor-pointer"
               onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Explorer mes projets
+              Mes Projets
             </Button>
             <a
               href="/resume.pdf"
@@ -45,7 +45,7 @@ export function HeroSection({ title, subtitle }: HeroSectionProps) {
                 
                 className="px-8 py-3 text-lg cursor-pointer"
               >
-                Télécharger mon CV
+                Mon CV
               </Button>
             </a>
           </div>
