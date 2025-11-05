@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
   
   if (!project) {
     return {
-      title: 'Project Not Found - Marco Boucas',
+      title: 'Projet introuvable - Marco Boucas',
     };
   }
 
@@ -53,7 +53,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            Back to Portfolio
+            Retour au Portfolio
           </Link>
         </div>
       </nav>
@@ -156,7 +156,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-              Other Projects
+              Autres Projets
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
