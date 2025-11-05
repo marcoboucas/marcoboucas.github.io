@@ -41,9 +41,9 @@ export function NavigationMenu() {
   }, []);
 
   const menuItems = [
-    { id: "hero", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
+    { id: "hero", label: "Accueil" },
+    { id: "about", label: "À propos" },
+    { id: "projects", label: "Projets" },
     { id: "certifications", label: "Certifications" },
     { id: "contact", label: "Contact" },
   ]

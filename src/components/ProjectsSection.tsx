@@ -15,8 +15,8 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
       <section id="projects" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-center mb-16 text-foreground">My Projects</h2>
-            <p className="text-center text-muted-foreground">No projects available at the moment.</p>
+            <h2 className="text-4xl md:text-5xl font-black text-center mb-16 text-foreground">Mes Projets</h2>
+            <p className="text-center text-muted-foreground">Aucun projet disponible pour le moment.</p>
           </div>
         </div>
       </section>
@@ -27,7 +27,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-black text-center mb-16 text-foreground">My Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-center mb-16 text-foreground">Mes Projets</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.slice(0, 6).map((project) => (

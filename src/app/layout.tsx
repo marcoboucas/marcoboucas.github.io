@@ -2,24 +2,24 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Marco Boucas - Data Scientist & AI Engineer",
-  description: "Portfolio of Marco Boucas, Data Scientist student at CentraleSupélec specializing in AI, NLP, and machine learning. Explore projects, certifications, and professional experience.",
-  keywords: "Marco Boucas, Data Scientist, AI, Machine Learning, NLP, CentraleSupélec, Portfolio",
+  title: "Marco Boucas - Data Scientist & Ingénieur IA",
+  description: "Portfolio de Marco Boucas, Data Scientist étudiant à CentraleSupélec spécialisé en IA, NLP et apprentissage automatique. Découvrez mes projets, certifications et expérience professionnelle.",
+  keywords: "Marco Boucas, Data Scientist, IA, Apprentissage Automatique, NLP, CentraleSupélec, Portfolio",
   authors: [{ name: "Marco Boucas" }],
   creator: "Marco Boucas",
   publisher: "Marco Boucas",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "fr_FR",
     url: "https://marcoboucas.github.io",
-    title: "Marco Boucas - Data Scientist & AI Engineer",
-    description: "Portfolio of Marco Boucas, Data Scientist student at CentraleSupélec specializing in AI, NLP, and machine learning.",
+    title: "Marco Boucas - Data Scientist & Ingénieur IA",
+    description: "Portfolio de Marco Boucas, Data Scientist étudiant à CentraleSupélec spécialisé en IA, NLP et apprentissage automatique.",
     siteName: "Marco Boucas Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marco Boucas - Data Scientist & AI Engineer",
-    description: "Portfolio of Marco Boucas, Data Scientist student at CentraleSupélec specializing in AI, NLP, and machine learning.",
+    title: "Marco Boucas - Data Scientist & Ingénieur IA",
+    description: "Portfolio de Marco Boucas, Data Scientist étudiant à CentraleSupélec spécialisé en IA, NLP et apprentissage automatique.",
   },
   robots: {
     index: true,
@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="fr" className="scroll-smooth">
       <body className="font-sans antialiased">
         {children}
       </body>

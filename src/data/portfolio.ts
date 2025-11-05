@@ -2,10 +2,10 @@ import { PortfolioData } from '@/types/portfolio';
 
 export const portfolioData: PortfolioData = {
   "title": "Marco Boucas",
-  "subtitle": "AI Engineering Manager",
+  "subtitle": "Responsable Ingénierie IA",
   "aboutMe": {
-    "p1": "I'm an <strong>AI Engineering Manager</strong> driven by technological innovation and the application of artificial intelligence to real-world challenges. With an engineering background from CentraleSupélec and deep expertise in AI, I lead technical teams in developing cutting-edge AI solutions.",
-    "p2": "Currently at <strong>Illuin Technology</strong>, I oversee the development of groundbreaking AI products for real-time and post-call conversation analysis, enabling businesses to extract valuable insights and automatically update CRM systems. My approach combines technical excellence, team leadership, and strategic vision to transform AI concepts into impactful commercial solutions."
+    "p1": "Je suis un <strong>Responsable Ingénierie IA</strong> passionné par l'innovation technologique et l'application de l'intelligence artificielle aux défis du monde réel. Avec une formation d'ingénieur de CentraleSupélec et une expertise approfondie en IA, je dirige des équipes techniques dans le développement de solutions IA de pointe.",
+    "p2": "Actuellement chez <strong>Illuin Technology</strong>, je supervise le développement de produits IA innovants pour l'analyse de conversations en temps réel et post-appel, permettant aux entreprises d'extraire des informations précieuses et de mettre à jour automatiquement leurs systèmes CRM. Mon approche combine excellence technique, leadership d'équipe et vision stratégique pour transformer les concepts IA en solutions commerciales à fort impact."
   },
   "certifications": [
     {
@@ -33,20 +33,20 @@ export const portfolioData: PortfolioData = {
   "portfolio": [
     {
       "company": {
-        "description": "Illuin Technology is an innovative company specializing in artificial intelligence solutions for enterprises.",
+        "description": "Illuin Technology est une entreprise innovante spécialisée dans les solutions d'intelligence artificielle pour les entreprises.",
         "name": "Illuin Technology",
         "url": "https://illuin.tech"
       },
       "id": "illuin-speech-analyzer",
       "links": [
         {
-          "text": "Visit Illuin Technology",
+          "text": "Visiter Illuin Technology",
           "url": "https://illuin.tech"
         }
       ],
       "miniature": "illuin-ai-analysis.jpg",
-      "name": "Speech Analyzer - AI Conversational Platform",
-      "short_description": "As product lead, I spearheaded the creation of Speech Analyzer, an innovative AI conversational platform for real-time and post-call speech analysis. This groundbreaking product went from concept to product-market fit in just 1.5 years, with a comprehensive business plan that demonstrated strong market demand. Speech Analyzer leverages advanced NLP and speech recognition technologies to automatically analyze customer conversations, extract actionable insights, and provide real-time feedback to sales and support teams. The platform achieved remarkable success by addressing critical pain points in customer communication analysis, becoming a cornerstone solution for enterprises seeking to optimize their customer interactions and drive data-informed decision-making.",
+      "name": "Speech Analyzer - Plateforme IA Conversationnelle",
+      "short_description": "En tant que chef de produit, j'ai dirigé la création de Speech Analyzer, une plateforme conversationnelle IA innovante pour l'analyse de la parole en temps réel et post-appel. Ce produit révolutionnaire est passé du concept à l'adéquation produit-marché en seulement 1,5 an, avec un business plan complet démontrant une forte demande du marché. Speech Analyzer exploite des technologies avancées de NLP et de reconnaissance vocale pour analyser automatiquement les conversations clients, extraire des informations exploitables et fournir des retours en temps réel aux équipes de vente et de support. La plateforme a obtenu un succès remarquable en résolvant des points de douleur critiques dans l'analyse des communications clients, devenant une solution clé pour les entreprises cherchant à optimiser leurs interactions clients et à prendre des décisions basées sur les données.",
       "tags": [
         "AI",
         "NLP",
@@ -62,15 +62,15 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "Illuin Technology is an innovative company specializing in artificial intelligence solutions for enterprises.",
+        "description": "Illuin Technology est une entreprise innovante spécialisée dans les solutions d'intelligence artificielle pour les entreprises.",
         "name": "Illuin Technology",
         "url": "https://illuin.tech"
       },
       "id": "illuin-ai-conversation-analysis",
       "links": [],
       "miniature": "illuin-ai-analysis.jpg",
-      "name": "AI Conversation Analysis Platform",
-      "short_description": "As AI Engineering Manager, I led the development of a revolutionary AI platform for real-time and post-call conversation analysis. This solution automatically extracts valuable insights from customer interactions and updates CRM systems in real-time, transforming how businesses understand and manage customer relationships.",
+      "name": "Plateforme d'Analyse de Conversations IA",
+      "short_description": "En tant que Responsable Ingénierie IA, j'ai dirigé le développement d'une plateforme IA révolutionnaire pour l'analyse de conversations en temps réel et post-appel. Cette solution extrait automatiquement des informations précieuses des interactions clients et met à jour les systèmes CRM en temps réel, transformant la façon dont les entreprises comprennent et gèrent les relations clients.",
       "tags": [
         "AI",
         "NLP",
@@ -83,15 +83,15 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "CentraleSupélec academic project",
+        "description": "Projet académique CentraleSupélec",
         "name": "CentraleSupélec",
         "url": "https://www.centralesupelec.fr/"
       },
       "id": "cs-project-health-challenge",
       "links": [],
       "miniature": "project-challenge-health.jpg",
-      "name": "DataChallenge: Health NLP",
-      "short_description": "Developed natural language processing solutions for healthcare data analysis, focusing on named entity recognition and question answering systems to extract medical insights from clinical documents.",
+      "name": "DataChallenge : NLP Santé",
+      "short_description": "Développement de solutions de traitement automatique du langage naturel pour l'analyse de données de santé, en se concentrant sur la reconnaissance d'entités nommées et les systèmes de questions-réponses pour extraire des informations médicales à partir de documents cliniques.",
       "tags": [
         "AI",
         "Python",
@@ -103,28 +103,28 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "CentraleSupélec deep learning project",
+        "description": "Projet deep learning CentraleSupélec",
         "name": "CentraleSupélec",
         "url": "https://www.centralesupelec.fr/"
       },
       "id": "cs-project-deep-learning",
       "links": [
         {
-          "text": "Video",
+          "text": "Vidéo",
           "url": "https://www.youtube.com/watch?v=08rauwKUgjE"
         },
         {
-          "text": "Github Repository",
+          "text": "Dépôt Github",
           "url": "https://github.com/magalimorin18/price_detection_deep_learning"
         },
         {
-          "text": "Report",
+          "text": "Rapport",
           "url": "/assets/projects/price_is_all_you_need.pdf"
         }
       ],
       "miniature": "deep-learning-project.jpg",
-      "name": "Price Detection in Supermarket photos",
-      "short_description": "Developed a computer vision system using deep learning to automatically detect and extract price information from supermarket photos. Implemented object detection algorithms to identify products and their associated price tags with high accuracy.",
+      "name": "Détection de prix dans les photos de supermarché",
+      "short_description": "Développement d'un système de vision par ordinateur utilisant le deep learning pour détecter et extraire automatiquement les informations de prix à partir de photos de supermarché. Implémentation d'algorithmes de détection d'objets pour identifier les produits et leurs étiquettes de prix avec une grande précision.",
       "tags": [
         "AI",
         "Python",
@@ -135,15 +135,15 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "CentraleSupélec final year project",
+        "description": "Projet de dernière année CentraleSupélec",
         "name": "CentraleSupélec",
         "url": "https://www.centralesupelec.fr/"
       },
       "id": "cs-project-3A",
       "links": [],
       "miniature": "project-3a.jpg",
-      "name": "Summarization of french medical documents",
-      "short_description": "Created an AI-powered summarization system for French medical documents using BioBert and advanced NLP techniques. The system helps healthcare professionals quickly extract key information from lengthy medical reports and clinical notes.",
+      "name": "Résumé de documents médicaux français",
+      "short_description": "Création d'un système de résumé automatique alimenté par l'IA pour les documents médicaux français utilisant BioBert et des techniques NLP avancées. Le système aide les professionnels de santé à extraire rapidement les informations clés des rapports médicaux et des notes cliniques volumineux.",
       "tags": [
         "AI",
         "Python",
@@ -156,14 +156,14 @@ export const portfolioData: PortfolioData = {
     {
       "company": {
         "description": "",
-        "name": "LVMH Research",
+        "name": "LVMH Recherche",
         "url": ""
       },
       "id": "cs-lvmh-filiere",
       "links": [],
       "miniature": "lvmh-recherche-innovation.jpg",
-      "name": "LVMH Research: Intelligent dataviz",
-      "short_description": "Creation of a data visualisation tool that allows formulators to search for formulas using natural language. Similarity analysis to extract the relevant tests records for a specific need. Visualisation of the results on the fly.",
+      "name": "LVMH Recherche : Dataviz intelligente",
+      "short_description": "Création d'un outil de visualisation de données permettant aux formulateurs de rechercher des formules en langage naturel. Analyse de similarité pour extraire les enregistrements de tests pertinents pour un besoin spécifique. Visualisation des résultats à la volée.",
       "tags": [
         "AI",
         "Python",
@@ -175,20 +175,20 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "BivwAk! is BNP Paribas' transformation hub, that aims at developing new services and new business models, accelerating the BNP Paribas engagement strategy",
+        "description": "BivwAk! est le pôle de transformation de BNP Paribas, qui vise à développer de nouveaux services et de nouveaux modèles d'affaires, accélérant la stratégie d'engagement de BNP Paribas",
         "name": "BivwAk! (BNP Paribas)",
         "url": "https://bivwak.bnpparibas"
       },
       "id": "bnpparibas-tess",
       "links": [
         {
-          "text": "LinkedIn post",
+          "text": "Publication LinkedIn",
           "url": "https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-activity-6815909823708753921-uDIX"
         }
       ],
       "miniature": "tess.jpg",
-      "name": "TESS : Tool of Ethics, Security and Sustainability",
-      "short_description": "Development of TESS (Tool of Ethic, Sustainability & Security). Use of web scraping and NLP to automatically analyze the legal and security information from service providers based on public data.",
+      "name": "TESS : Outil d'Éthique, Sécurité et Durabilité",
+      "short_description": "Développement de TESS (Tool of Ethic, Sustainability & Security). Utilisation du web scraping et du NLP pour analyser automatiquement les informations juridiques et de sécurité des fournisseurs de services à partir de données publiques.",
       "tags": [
         "AI",
         "NLP",
@@ -202,14 +202,14 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "73 Strings has been set up to fuse the best in technology with a deep understanding of critical insights to make capital more efficient.",
+        "description": "73 Strings a été créé pour fusionner le meilleur de la technologie avec une compréhension approfondie des informations critiques afin de rendre le capital plus efficace.",
         "name": "73 Strings",
         "url": "https://www.73strings.com/"
       },
       "id": "73strings-ect",
       "miniature": "73strings-ect.jpg",
-      "name": "Earning Calls Transcripts Analysis",
-      "short_description": "Development of NLP algorithms and models for financial texts. Use of Topic Modeling, Sentiment Analysis, Classification algorithms, Abstractive Summarization Models to retrive information from long texts.",
+      "name": "Analyse de transcriptions de conférences financières",
+      "short_description": "Développement d'algorithmes et de modèles NLP pour les textes financiers. Utilisation de Topic Modeling, Analyse de Sentiment, algorithmes de Classification, Modèles de Résumé Abstractif pour extraire des informations de textes longs.",
       "tags": [
         "AI",
         "Machine Learning",
@@ -227,20 +227,20 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "BNP Paribas Corporate and Institutional Banking (BNP Paribas CIB) is the global investment banking arm of BNP Paribas.",
+        "description": "BNP Paribas Corporate and Institutional Banking (BNP Paribas CIB) est la branche de banque d'investissement mondiale de BNP Paribas.",
         "name": "BNP Paribas CIB",
         "url": "https://cib.bnpparibas/"
       },
       "id": "bnpparibas-datachallenge",
       "links": [
         {
-          "text": "LinkedIn Post",
+          "text": "Publication LinkedIn",
           "url": "https://www.linkedin.com/posts/bivwak-by-bnpparibas_data-ethics-sustainable-activity-6739085784495792128-x4eW"
         }
       ],
       "miniature": "tess.jpg",
       "name": "BNP Paribas DataChallenge",
-      "short_description": "I have participated to the first Data Responsible Challenge from BNP Paribas CIB. Using NLP technologies, with State-of-the-Art NLP models like T5, to make an eco-friendly prototype. By computing the carbon footprint of our models, we can select the best one based not only on his accuracy, but also its impact on the environment.",
+      "short_description": "J'ai participé au premier Data Responsible Challenge de BNP Paribas CIB. Utilisation de technologies NLP, avec des modèles NLP de pointe comme T5, pour créer un prototype éco-responsable. En calculant l'empreinte carbone de nos modèles, nous pouvons sélectionner le meilleur non seulement en fonction de sa précision, mais aussi de son impact sur l'environnement.",
       "tags": [
         "AI",
         "NLP",
@@ -254,14 +254,14 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "BNP Paribas Asset Management is the dedicated, autonomous asset management business of BNP Paribas Group.",
+        "description": "BNP Paribas Asset Management est l'activité dédiée et autonome de gestion d'actifs du Groupe BNP Paribas.",
         "name": "BNP Paribas Asset Management",
         "url": "https://www.bnpparibas-am.fr/"
       },
       "id": "dty-bnppam",
       "miniature": "bnppam.jpg",
-      "name": "Recommender System for Asset Management",
-      "short_description": "We created a recommender system that finds the best blog articles and internal resources for a given product. Using State-of-the-Art models such as DistilBERT, finBERT and Longformer we were able to summarize articles for the Sales, making easier the task of finding relevant documents.",
+      "name": "Système de recommandation pour la gestion d'actifs",
+      "short_description": "Nous avons créé un système de recommandation qui trouve les meilleurs articles de blog et ressources internes pour un produit donné. En utilisant des modèles de pointe tels que DistilBERT, finBERT et Longformer, nous avons pu résumer les articles pour les équipes commerciales, facilitant ainsi la recherche de documents pertinents.",
       "tags": [
         "AI",
         "NLP",
@@ -274,20 +274,20 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "RunWaiz is the winner of the \"We Love Intrapreneurs\" program of Safran, it intends to create an airport decision making tool based on runwaiz conditions.",
+        "description": "RunWaiz est le gagnant du programme \"We Love Intrapreneurs\" de Safran, qui vise à créer un outil d'aide à la décision pour les aéroports basé sur les conditions de piste.",
         "name": "Run[Waiz] (Safran)",
         "url": "https://runwaiz.com/"
       },
       "id": "dty-runwaiz",
       "links": [
         {
-          "text": "Presentation Video",
+          "text": "Vidéo de présentation",
           "url": "https://www.linkedin.com/posts/boucasmarco_machinelearning-ai-airports-activity-6706131569767145472-UrSu"
         }
       ],
       "miniature": "runwaiz.jpg",
-      "name": "Runway Coefficient Computation",
-      "short_description": "We created a recommender system that finds the best blog articles and internal resources for a given product. Using State-of-the-Art models such as DistilBERT, finBERT and Longformer we were able to summarize articles for the Sales, making easier the task of finding relevant documents.",
+      "name": "Calcul du coefficient de piste",
+      "short_description": "Développement d'un système de calcul du coefficient de piste pour les aéroports. Utilisation de l'apprentissage automatique pour aider à la prise de décision basée sur les conditions de piste, améliorant ainsi la sécurité et l'efficacité des opérations aéroportuaires.",
       "tags": [
         "AI",
         "Python",
@@ -297,14 +297,14 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "Flashbrand is an innovative startup that aims to revolutionize feedbacks and HR methods using AI and an employee centred approach.",
+        "description": "Flashbrand est une startup innovante qui vise à révolutionner les retours d'information et les méthodes RH en utilisant l'IA et une approche centrée sur l'employé.",
         "name": "Flashbrand",
         "url": "https://home.flashbrand.me/"
       },
       "id": "dty-flashbrand",
       "miniature": "flashbrand.jpg",
-      "name": "Emotion Recognition in Videos",
-      "short_description": "We created an application to gather information from a video conversation in real-time. Text, Image and Sound were treated to gather as much information as possible. We included a small coach bot, to provide useful information during the presentation to improve the user performance.",
+      "name": "Reconnaissance d'émotions dans les vidéos",
+      "short_description": "Nous avons créé une application pour recueillir des informations à partir d'une conversation vidéo en temps réel. Le texte, l'image et le son ont été traités pour recueillir autant d'informations que possible. Nous avons inclus un petit bot coach, pour fournir des informations utiles pendant la présentation afin d'améliorer la performance de l'utilisateur.",
       "tags": [
         "AI",
         "Javascript",
@@ -319,14 +319,14 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "During my first year at CentraleSupélec, for the lesson about Information Retrieval",
+        "description": "Durant ma première année à CentraleSupélec, pour le cours sur la Recherche d'Information",
         "name": "CentraleSupélec",
         "url": "https://www.centralesupelec.fr/"
       },
       "id": "centralesupelec-tweets",
       "miniature": "twitter.jpg",
-      "name": "Tweet Analysis",
-      "short_description": "We created a system to evaluate \"how famous a movie is\", based on twitter. Using different vectorization techniques, from TF-IDF to LSTM models, we were able to give a popularity measure based on all tweets about a movie. As a demonstration, we used the movie \"Godzilla\", and the results were very similar to the \"Rotten Tomatoes score\" (our reference).",
+      "name": "Analyse de Tweets",
+      "short_description": "Nous avons créé un système pour évaluer \"à quel point un film est célèbre\", basé sur Twitter. En utilisant différentes techniques de vectorisation, du TF-IDF aux modèles LSTM, nous avons pu donner une mesure de popularité basée sur tous les tweets concernant un film. En guise de démonstration, nous avons utilisé le film \"Godzilla\", et les résultats étaient très similaires au \"score Rotten Tomatoes\" (notre référence).",
       "tags": [
         "Python",
         "Keras",
@@ -337,20 +337,20 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "During my first year at CentraleSupélec, for the AI Project",
+        "description": "Durant ma première année à CentraleSupélec, pour le Projet IA",
         "name": "CentraleSupélec",
         "url": "https://www.centralesupelec.fr/"
       },
       "id": "centralesupelec-clustering",
       "links": [
         {
-          "text": "Visit the Platform",
+          "text": "Visiter la plateforme",
           "url": "https://marco.boucas.fr/poleIA-clustering/index.html"
         }
       ],
       "miniature": "clustering.jpg",
-      "name": "Clustering Pedagogical Platform",
-      "short_description": "We created a Pedagogical Platform for french students to learn and discover clustering methods and algorithms. Our website explains 3 algorithms : K-Means, hierarchical clustering and DBSCAN, with for each algorithm a small desciption, a visualisation of the process, a notebook exercise and an small summary on essential information.",
+      "name": "Plateforme pédagogique de Clustering",
+      "short_description": "Nous avons créé une plateforme pédagogique pour que les étudiants français apprennent et découvrent les méthodes et algorithmes de clustering. Notre site web explique 3 algorithmes : K-Means, clustering hiérarchique et DBSCAN, avec pour chaque algorithme une petite description, une visualisation du processus, un exercice notebook et un petit résumé sur les informations essentielles.",
       "tags": [
         "AI",
         "Machine Learning",
@@ -361,14 +361,14 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "ViaRézo is a student association that provide internet to all students of the residences of CentraleSupélec (more than 3000 students).",
+        "description": "ViaRézo est une association étudiante qui fournit Internet à tous les étudiants des résidences de CentraleSupélec (plus de 3000 étudiants).",
         "name": "ViaRézo",
         "url": "https://viarezo.fr"
       },
       "id": "viarezo-palaborne",
       "miniature": "viarezo.jpg",
       "name": "Palaborne",
-      "short_description": "As an Internet Provider, ViaRézo has a lot of machines, especially wifi hotspots (about 300). To visualize all these elements, I created Palaborne, an application that display all elements of the infrastructure in 3D, to help detect geographical problems.",
+      "short_description": "En tant que Fournisseur d'Accès Internet, ViaRézo possède de nombreuses machines, notamment des bornes wifi (environ 300). Pour visualiser tous ces éléments, j'ai créé Palaborne, une application qui affiche tous les éléments de l'infrastructure en 3D, pour aider à détecter les problèmes géographiques.",
       "tags": [
         "Javascript",
         "DataViz",
@@ -379,14 +379,14 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "ViaRézo is a student association that provide internet to all students of the residences of CentraleSupélec (more than 3000 students).",
+        "description": "ViaRézo est une association étudiante qui fournit Internet à tous les étudiants des résidences de CentraleSupélec (plus de 3000 étudiants).",
         "name": "ViaRézo",
         "url": "https://viarezo.fr"
       },
       "id": "viarezo-treasurehunt",
       "miniature": "treasurehunt.jpg",
-      "name": "TreasureHunt",
-      "short_description": "Each year, ViaRézo is organising a Treasure Hunt on the campus of CentraleSupélec, allowing new students to discover the buildings and some key locations. I have developped a Treasure Hunt website, handling all the teams (about 250 students) to help them found their next activity, making easier the staff work during the event.",
+      "name": "Chasse au Trésor",
+      "short_description": "Chaque année, ViaRézo organise une Chasse au Trésor sur le campus de CentraleSupélec, permettant aux nouveaux étudiants de découvrir les bâtiments et certains lieux clés. J'ai développé un site web de Chasse au Trésor, gérant toutes les équipes (environ 250 étudiants) pour les aider à trouver leur prochaine activité, facilitant ainsi le travail du personnel pendant l'événement.",
       "tags": [
         "Python",
         "Django",
@@ -395,20 +395,20 @@ export const portfolioData: PortfolioData = {
     },
     {
       "company": {
-        "description": "Automatants is the new AI association of CentraleSupélec.",
+        "description": "Automatants est la nouvelle association d'IA de CentraleSupélec.",
         "name": "Automatants",
         "url": "https://automatants.cs-campus.fr"
       },
       "id": "automatants-website",
       "links": [
         {
-          "text": "Visit the Website!",
+          "text": "Visiter le site !",
           "url": "https://automatants.cs-campus.fr/"
         }
       ],
       "miniature": "automatants.jpg",
-      "name": "Automatants Website",
-      "short_description": "To increase the visibility of our association, I created a website for our association. We also have some new features, such as a member access, with all information about the current projects and formations, alongside a system of formations and rewards, to make easier the development of new skills.",
+      "name": "Site Web Automatants",
+      "short_description": "Pour augmenter la visibilité de notre association, j'ai créé un site web pour notre association. Nous avons également quelques nouvelles fonctionnalités, comme un accès membre, avec toutes les informations sur les projets et formations en cours, ainsi qu'un système de formations et de récompenses, pour faciliter le développement de nouvelles compétences.",
       "tags": [
         "Web",
         "Javascript",

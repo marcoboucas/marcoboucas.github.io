@@ -14,9 +14,9 @@ export function ContactSection() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Let&apos;s Connect</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Restons en contact</h3>
                 <p className="text-muted-foreground mb-8 text-center">
-                  Feel free to reach out to discuss projects, opportunities, or simply to exchange ideas about artificial intelligence.
+                  N&apos;hésitez pas à me contacter pour discuter de projets, d&apos;opportunités, ou simplement pour échanger des idées sur l&apos;intelligence artificielle.
                 </p>
               </div>
 
@@ -38,7 +38,7 @@ export function ContactSection() {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Location</p>
+                    <p className="font-semibold text-foreground">Localisation</p>
                     <p className="text-muted-foreground">Paris, France</p>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ export function ContactSection() {
 
               {/* Social Links */}
               <div>
-                <h4 className="font-semibold text-foreground mb-4 text-center">Follow Me</h4>
+                <h4 className="font-semibold text-foreground mb-4 text-center">Me suivre</h4>
                 <div className="flex gap-4 justify-center">
                   <Button variant="outline" size="icon" asChild>
                     <a href="https://github.com/marcoboucas" target="_blank" rel="noopener noreferrer">
