@@ -287,7 +287,7 @@ export const portfolioData: PortfolioData = {
       ],
       "miniature": "runwaiz.jpg",
       "name": "Calcul du coefficient de piste",
-      "short_description": "Nous avons créé un système de recommandation qui trouve les meilleurs articles de blog et ressources internes pour un produit donné. En utilisant des modèles de pointe tels que DistilBERT, finBERT et Longformer, nous avons pu résumer les articles pour les équipes commerciales, facilitant ainsi la recherche de documents pertinents.",
+      "short_description": "Développement d'un système de calcul du coefficient de piste pour les aéroports. Utilisation de l'apprentissage automatique pour aider à la prise de décision basée sur les conditions de piste, améliorant ainsi la sécurité et l'efficacité des opérations aéroportuaires.",
       "tags": [
         "AI",
         "Python",
