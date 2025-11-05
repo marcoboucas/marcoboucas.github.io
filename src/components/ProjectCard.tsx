@@ -92,7 +92,7 @@ export default function ProjectCard({ project, className = '', style }: ProjectC
       <Link
         href={`/projects/${project.id}`}
         className="absolute inset-0 z-10"
-        aria-label={`View details for ${project.name}`}
+        aria-label={`Voir les détails de ${project.name}`}
       />
     </div>
   );
