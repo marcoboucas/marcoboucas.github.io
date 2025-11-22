@@ -44,9 +44,9 @@ export const portfolioData: PortfolioData = {
           "url": "https://illuin.tech"
         }
       ],
-      "miniature": "illuin-ai-analysis.jpg",
+      "miniature": "speech-analyzer.png",
       "name": "Speech Analyzer - Plateforme IA Conversationnelle",
-      "short_description": "En tant que chef de produit, j'ai dirigé la création de Speech Analyzer, une plateforme conversationnelle IA innovante pour l'analyse de la parole en temps réel et post-appel. Ce produit révolutionnaire est passé du concept à l'adéquation produit-marché en seulement 1,5 an, avec un business plan complet démontrant une forte demande du marché. Speech Analyzer exploite des technologies avancées de NLP et de reconnaissance vocale pour analyser automatiquement les conversations clients, extraire des informations exploitables et fournir des retours en temps réel aux équipes de vente et de support. La plateforme a obtenu un succès remarquable en résolvant des points de douleur critiques dans l'analyse des communications clients, devenant une solution clé pour les entreprises cherchant à optimiser leurs interactions clients et à prendre des décisions basées sur les données.",
+      "short_description": "Directeur produit de la solution Analyzer (analyse IA de conversations)",
       "backgroundColor": "#1a1a2e",
       "tags": [
         "AI",
@@ -61,28 +61,7 @@ export const portfolioData: PortfolioData = {
         "Team Leadership"
       ]
     },
-    {
-      "company": {
-        "description": "Illuin Technology est une entreprise innovante spécialisée dans les solutions d'intelligence artificielle pour les entreprises.",
-        "name": "Illuin Technology",
-        "url": "https://illuin.tech"
-      },
-      "id": "illuin-ai-conversation-analysis",
-      "links": [],
-      "miniature": "illuin-ai-analysis.jpg",
-      "name": "Plateforme d'Analyse de Conversations IA",
-      "short_description": "En tant que AI Engineering Manager, j'ai dirigé le développement d'une plateforme IA révolutionnaire pour l'analyse de conversations en temps réel et post-appel. Cette solution extrait automatiquement des informations précieuses des interactions clients et met à jour les systèmes CRM en temps réel, transformant la façon dont les entreprises comprennent et gèrent les relations clients.",
-      "backgroundColor": "#1a1a2e",
-      "tags": [
-        "AI",
-        "NLP",
-        "Real-time Analysis",
-        "CRM Integration",
-        "Machine Learning",
-        "Team Leadership",
-        "Product Management"
-      ]
-    },
+    
     {
       "company": {
         "description": "Projet académique CentraleSupélec",

@@ -34,7 +34,7 @@ export function HeroSection({ title, subtitle }: HeroSectionProps) {
             >
               Mes Projets
             </Button>
-            <a
+            {/* <a
               href="/resume.pdf"
               download
               target="_blank"
@@ -47,7 +47,7 @@ export function HeroSection({ title, subtitle }: HeroSectionProps) {
               >
                 Mon CV
               </Button>
-            </a>
+            </a> */}
           </div>
 
           <div className="flex justify-center gap-6 pt-8">
