@@ -12,7 +12,7 @@ links:
   - text: "Dépôt Github"
     url: "https://github.com/magalimorin18/price_detection_deep_learning"
   - text: "Rapport"
-    url: "/assets/projects/price_is_all_you_need.pdf"
+    url: "/projects/price_is_all_you_need.pdf"
 date: "2022-01-01"
 featured: true
 ---

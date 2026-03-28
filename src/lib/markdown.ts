@@ -36,7 +36,7 @@ export interface AboutData {
 }
 
 async function markdownToHtml(markdown: string): Promise<string> {
-  const result = await remark().use(html, { sanitize: false }).process(markdown);
+  const result = await remark().use(html).process(markdown);
   return result.toString();
 }
 

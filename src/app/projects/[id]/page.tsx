@@ -170,7 +170,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div className="grid md:grid-cols-3 gap-6">
               {relatedProjects.map((related) => (
                 <Link
-                  key={related.id}
+                  key={related.slug}
                   href={`/projects/${related.slug}`}
                   className="group block bg-white border border-[hsl(36_18%_86%)] rounded-lg overflow-hidden hover:shadow-md transition-shadow"
                 >
