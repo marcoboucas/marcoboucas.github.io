@@ -1,236 +1,212 @@
 import { notFound } from 'next/navigation';
-import { portfolioData } from '@/data/portfolio';
-import { Project } from '@/types/portfolio';
-import { getContrastColor } from '@/lib/utils';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { getAllProjectSlugs, getProjectBySlug, getAllProjects } from '@/lib/markdown';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 
 interface ProjectPageProps {
   params: Promise<{ id: string }>;
 }
 
-// Generate static params for all projects
 export async function generateStaticParams() {
-  return portfolioData.portfolio.map((project) => ({
-    id: project.id,
-  }));
+  const slugs = getAllProjectSlugs();
+  return slugs.map((slug) => ({ id: slug }));
 }
 
-// Generate metadata for SEO
 export async function generateMetadata({ params }: ProjectPageProps) {
   const { id } = await params;
-  const project = portfolioData.portfolio.find((p) => p.id === id);
-  
+  const project = await getProjectBySlug(id);
+
   if (!project) {
-    return {
-      title: 'Projet introuvable - Marco Boucas',
-    };
+    return { title: 'Projet introuvable — Marco Boucas' };
   }
 
   return {
-    title: `${project.name} - Marco Boucas Portfolio`,
-    description: project.short_description || `${project.name} project by Marco Boucas`,
+    title: `${project.title} — Marco Boucas`,
+    description: project.excerpt,
     keywords: project.tags.join(', '),
   };
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { id } = await params;
-  const project: Project | undefined = portfolioData.portfolio.find((p) => p.id === id);
+  const [project, allProjects] = await Promise.all([
+    getProjectBySlug(id),
+    getAllProjects(),
+  ]);
 
   if (!project) {
     notFound();
   }
 
+  const relatedProjects = allProjects
+    .filter((p) => p.slug !== id)
+    .slice(0, 3);
+
   return (
-    <main className="min-h-screen bg-gradient-to-br from-background via-muted/10 to-background">
+    <div className="min-h-screen bg-[hsl(40_33%_98%)]">
       {/* Navigation */}
-      <nav className="bg-card/80 backdrop-blur-sm border-b border-border shadow-sm">
-        <div className="section-container py-4">
+      <header className="border-b border-[hsl(36_18%_86%)] bg-[hsl(40_33%_98%)] sticky top-0 z-50">
+        <div className="section-container py-5 flex items-center justify-between">
           <Link
             href="/"
-            className="inline-flex items-center text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
+            className="text-lg font-semibold text-[hsl(20_14%_12%)] tracking-tight"
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Retour au Portfolio
+            Marco Boucas
+          </Link>
+          <Link
+            href="/"
+            className="flex items-center gap-2 text-sm text-[hsl(20_10%_48%)] hover:text-[hsl(20_14%_12%)] transition-colors"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Retour
           </Link>
         </div>
-      </nav>
+      </header>
 
-      {/* Hero Section */}
-      <section className="py-16 bg-card/50 backdrop-blur-sm">
-        <div className="section-container">
-          <div className="max-w-4xl mx-auto">
-            {/* Project Image */}
-            <div className="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-8 shadow-lg">
-              <Image
-                src={`/images/projects/${project.miniature}`}
-                alt={project.name}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 896px"
-              />
-            </div>
+      <main className="section-container py-16">
+        <div className="max-w-3xl mx-auto">
+          {/* Breadcrumb */}
+          <nav className="text-xs text-[hsl(20_10%_48%)] mb-10 flex items-center gap-2">
+            <Link href="/" className="hover:text-[hsl(25_60%_35%)] transition-colors">Accueil</Link>
+            <span>/</span>
+            <span className="text-[hsl(25_60%_35%)]">{project.title}</span>
+          </nav>
 
-            {/* Project Info */}
-            <div className="space-y-6">
-              {/* Company Badge */}
-              {project.company.name && (
-                <div 
-                  className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium"
-                  style={{
-                    backgroundColor: project.backgroundColor 
-                      ? getContrastColor(project.backgroundColor) === "white" 
-                        ? "rgba(255, 255, 255, 0.9)" 
-                        : "rgba(0, 0, 0, 0.9)"
-                      : "rgba(59, 130, 246, 0.1)",
-                    color: project.backgroundColor 
-                      ? getContrastColor(project.backgroundColor) === "white" 
-                        ? "black" 
-                        : "white"
-                      : "rgba(30, 64, 175, 1)"
-                  }}
+          {/* Company tag */}
+          {project.company && (
+            <p className="text-xs text-[hsl(25_60%_35%)] font-medium uppercase tracking-widest mb-4">
+              {project.company_url ? (
+                <a
+                  href={project.company_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
                 >
-                  {project.company.url ? (
-                    <Link 
-                      href={project.company.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      {project.company.name}
-                    </Link>
-                  ) : (
-                    project.company.name
-                  )}
-                </div>
+                  {project.company}
+                </a>
+              ) : (
+                project.company
               )}
+            </p>
+          )}
 
-              {/* Title */}
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-                {project.name}
-              </h1>
+          {/* Title */}
+          <h1
+            className="text-4xl md:text-5xl font-bold text-[hsl(20_14%_12%)] leading-tight mb-6"
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          >
+            {project.title}
+          </h1>
 
-              {/* Company Description */}
-              {project.company.description && (
-                <p className="text-lg text-gray-600 dark:text-gray-300 italic">
-                  {project.company.description}
-                </p>
-              )}
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2 mb-10">
+            {project.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-xs px-2.5 py-1 bg-[hsl(38_22%_93%)] text-[hsl(20_10%_38%)] rounded border border-[hsl(36_18%_86%)]"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
 
-              {/* Description */}
-              {project.short_description && (
-                <div className="prose prose-lg dark:prose-invert max-w-none">
-                  <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {project.short_description}
-                  </p>
-                </div>
-              )}
+          {/* Hero image */}
+          <div className="relative aspect-video rounded-lg overflow-hidden bg-[hsl(38_22%_94%)] mb-12 border border-[hsl(36_18%_86%)]">
+            <Image
+              src={`/images/projects/${project.image}`}
+              alt={project.title}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
 
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag, index) => (
-                  <Badge
+          {/* Markdown content */}
+          <article
+            className="prose-editorial"
+            dangerouslySetInnerHTML={{ __html: project.contentHtml }}
+          />
+
+          {/* Links */}
+          {project.links && project.links.length > 0 && (
+            <div className="mt-12 pt-8 border-t border-[hsl(36_18%_86%)]">
+              <h2
+                className="text-sm font-semibold uppercase tracking-widest text-[hsl(20_10%_48%)] mb-4"
+              >
+                Liens
+              </h2>
+              <div className="flex flex-wrap gap-3">
+                {project.links.map((link, index) => (
+                  <a
                     key={index}
-                    variant="secondary"
-                    className="px-3 py-1 border-0 bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 border border-[hsl(36_18%_86%)] rounded text-sm text-[hsl(20_14%_12%)] hover:border-[hsl(25_60%_35%)] hover:text-[hsl(25_60%_35%)] transition-colors bg-white"
                   >
-                    {tag}
-                  </Badge>
+                    <ExternalLink className="h-3.5 w-3.5" />
+                    {link.text}
+                  </a>
                 ))}
               </div>
-
-              {/* Links */}
-              {project.links && project.links.length > 0 && (
-                <div className="flex flex-wrap gap-4 pt-4">
-                  {project.links.map((link, index) => (
-                    <Link
-                      key={index}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-primary-600 border border-transparent rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors duration-200"
-                    >
-                      {link.text}
-                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </Link>
-                  ))}
-                </div>
-              )}
             </div>
-          </div>
+          )}
         </div>
-      </section>
+      </main>
 
       {/* Related Projects */}
-      <section className="py-16 bg-gradient-to-br from-background via-muted/20 to-background">
-        <div className="section-container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-foreground mb-8">
-              Autres Projets
+      {relatedProjects.length > 0 && (
+        <section className="border-t border-[hsl(36_18%_86%)] bg-[hsl(38_22%_95%)] py-16">
+          <div className="section-container">
+            <h2
+              className="text-2xl font-bold text-[hsl(20_14%_12%)] mb-8"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
+              Autres projets
             </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {portfolioData.portfolio
-                .filter((p) => p.id !== project.id)
-                .slice(0, 4)
-                .map((relatedProject) => (
-                  <Card
-                    key={relatedProject.id}
-                    className="group border-0 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden cursor-pointer bg-card/80 backdrop-blur-sm hover:bg-card/90"
-                  >
-                    <Link href={`/projects/${relatedProject.id}`}>
-                      <div className="relative h-32 w-full overflow-hidden">
-                        <Image
-                          src={`/images/projects/${relatedProject.miniature}`}
-                          alt={relatedProject.name}
-                          fill
-                          className="object-cover group-hover:scale-110 transition-transform duration-300"
-                          sizes="(max-width: 768px) 100vw, 448px"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        
-                        {relatedProject.company.name && (
-                          <div className="absolute top-2 left-2">
-                            <Badge 
-                              className="backdrop-blur-md border-0 shadow-lg font-medium text-xs"
-                              style={{
-                                backgroundColor: relatedProject.backgroundColor 
-                                  ? getContrastColor(relatedProject.backgroundColor) === "white" 
-                                    ? "rgba(255, 255, 255, 0.95)" 
-                                    : "rgba(0, 0, 0, 0.85)"
-                                  : "rgba(255, 255, 255, 0.95)",
-                                color: relatedProject.backgroundColor 
-                                  ? getContrastColor(relatedProject.backgroundColor) === "white" 
-                                    ? "black" 
-                                    : "white"
-                                  : "black"
-                              }}
-                            >
-                              {relatedProject.company.name}
-                            </Badge>
-                          </div>
-                        )}
-                      </div>
-                      <CardContent className="p-4">
-                        <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-200">
-                          {relatedProject.name}
-                        </h3>
-                      </CardContent>
-                    </Link>
-                  </Card>
-                ))}
+            <div className="grid md:grid-cols-3 gap-6">
+              {relatedProjects.map((related) => (
+                <Link
+                  key={related.id}
+                  href={`/projects/${related.slug}`}
+                  className="group block bg-white border border-[hsl(36_18%_86%)] rounded-lg overflow-hidden hover:shadow-md transition-shadow"
+                >
+                  <div className="aspect-video relative overflow-hidden bg-[hsl(38_22%_94%)]">
+                    <Image
+                      src={`/images/projects/${related.image}`}
+                      alt={related.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-xs text-[hsl(25_60%_35%)] font-medium mb-1">{related.company}</p>
+                    <h3
+                      className="font-semibold text-[hsl(20_14%_12%)] group-hover:text-[hsl(25_60%_35%)] transition-colors text-sm leading-snug"
+                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    >
+                      {related.title}
+                    </h3>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
+        </section>
+      )}
+
+      {/* Footer */}
+      <footer className="border-t border-[hsl(36_18%_86%)] py-8">
+        <div className="section-container text-center">
+          <p className="text-xs text-[hsl(20_10%_60%)]">
+            © {new Date().getFullYear()} Marco Boucas
+          </p>
         </div>
-      </section>
-    </main>
+      </footer>
+    </div>
   );
 }
